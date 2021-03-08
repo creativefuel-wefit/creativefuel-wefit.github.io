@@ -97,36 +97,13 @@
 
             <section class="zoom_panel quote">
                 <!-- <iframe src="https://creativefuel.io/assets/img/slide/final.mp4" allow="autoplay; fullscreen"></iframe> -->
-                <video width="100%" autoplay muted id="videoId" onscroll="toggleMute();" >
-                  <source src="https://creativefuel.io/assets/img/slide/final.mp4" type="video/mp4">
-                </video>
+                <img src="images/main-background2.jpg" width="100%" id="videoId" onscroll="toggleMute();" >
 
-                <script>
-                    function toggleMute() {
-
-  var video=document.getElementById("videoId");
-
-  if(video.muted){
-    video.muted = false;
-    video.play()
-
-  } else {
-    debugger;
-    video.muted = true;
-    video.play()
-  }
-
-}
-
-$(document).ready(function(){
-  setTimeout(toggleMute,3500);
-})
-                </script>
-                <!-- <div class="quote_text">
+                 <div class="quote_text">
                   <p>We make</p>
                   <p>brands</p>
                   <p>go viral</p>
-                </div> -->
+                </div>
             </section>
 
         </div>
