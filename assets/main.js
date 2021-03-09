@@ -34,72 +34,104 @@
 
 
 
-// floating
-
-//     $.fn.jQuerySimpleCounter = function( options ) {
-//         var settings = $.extend({
-//             start:  0,
-//             end:    100,
-//             easing: 'swing',
-//             duration: 400,
-//             complete: ''
-//         }, options );
-
-//         var thisElement = $(this);
-
-//         $({count: settings.start}).animate({count: settings.end}, {
-//             duration: settings.duration,
-//             easing: settings.easing,
-//             step: function() {
-//                 var mathCount = Math.ceil(this.count);
-//                 thisElement.text(mathCount);
-//             },
-//             complete: settings.complete
-//         });
-//     };
-
-
-// $('#number1').jQuerySimpleCounter({end: 500,duration: 3000});
-// $('#number2').jQuerySimpleCounter({end: 1200,duration: 3000});
-// $('#number3').jQuerySimpleCounter({end: 40000,duration: 2000});
-// $('#number4').jQuerySimpleCounter({end: 500,duration: 2500});
-
-
-
-//     /* AUTHOR LINK */
-//      $('.about-me-img').hover(function(){
-//             $('.authorWindowWrapper').stop().fadeIn('fast').find('p').addClass('trans');
-//         }, function(){
-//             $('.authorWindowWrapper').stop().fadeOut('fast').find('p').removeClass('trans');
-//         });
-     
-
-
-
-// videoModal()
-
- // $(function(){
-
- //    $(window).scroll(function(e) {
-
- //        var scrollAmount = $('body').scrollTop();   
- //        console.log(scrollAmount);
-
-
- //    if(scrollAmount >="500" && scrollAmount <= "600") {
-
-
- //        $("#videoHolder").html(
- //            '<video autoplay  loop>' +
-
- //         '<source src="https://creativefuel.io/assets/img/slide/final.mp4" type="video/mp4">' +
-
- //         '</video>');
-
-
 
          // preloader
        setTimeout(function(){        
         $('.get_load').fadeOut();
         }, 2800);
 
+
+       $(function() {
+
+var media = $('video').not("[autoplay='autoplay']"),
+tolerance = 200;
+
+function checkMedia() {
+
+  var current = $(window).scrollTop(),
+  scrollTop = current + tolerance,
+  scrollBottom = current + $(window).height() - tolerance;
+
+  media.each(function(index, el) {
+
+    var yTopMedia = $(this).offset().top,
+    yBottomMedia = $(this).height() + yTopMedia;
+
+    if (scrollTop < yBottomMedia && scrollBottom > yTopMedia) $(this).get(0).play();
+    else $(this).get(0).pause();
+  });
+}
+
+$(window).scroll(checkMedia);
+});
+
+//  $(window).scroll(function() { 
+//     var iframe = document.querySelector('video');
+//     if ($(this).scrollTop() > 10){ 
+//         iframe.mute();
+//     } else { 
+//         iframe.unmute(); 
+//     } 
+// });
+
+// $(window).scroll(function() {
+//     if ($(this).scrollTop() >1){  
+//         $('video').setAttribute('muted'); 
+//     } else {
+//         $('video').setAttribute('unmuted'); 
+//     }
+// });
+
+// $(window).scroll(function() {
+//     $('video').prop('volume', $(this).scrollTop() > 1 ? 0 : 1);
+// });
+
+//  var videos = document.getElementsByTagName("video"),
+//           fraction = 0.5;
+//           function checkScroll() {
+
+//               for(var i = 0; i < videos.length; i++) {
+
+//                   var video = videos[i];
+
+//                   var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
+//                       b = y + h, //bottom
+//                       visibleX, visibleY, visible;
+
+//                       visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+//                       visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+
+//                       visible = visibleX * visibleY / (w * h);
+
+//                       if (visible > fraction) {
+//                           video.play();
+//                       } else {
+//                           video.pause();
+//                       }
+
+//               }
+
+//           }
+
+//           window.addEventListener('scroll', checkScroll, false);
+//           window.addEventListener('resize', checkScroll, false);
+
+// function toggleMute() {
+
+//   var video=document.getElementById("videoId");
+
+//   if(video.muted){
+//     video.muted = false;
+//     video.play()
+
+//   } else {
+//     debugger;
+//     video.muted = true;
+//     video.play()
+//   }
+
+// }
+
+// $(document).ready(function(){
+//   setTimeout(toggleMute,3500);
+// })
