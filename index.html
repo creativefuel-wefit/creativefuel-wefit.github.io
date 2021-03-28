@@ -1,449 +1,806 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="description" content="CreativeFuel">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta name="robots" content="index, follow">
-    <title>Creative Fuel</title>
-    <meta name="description" content="Creative Fuels">
-    <meta property="og:title" content="Creative Fuel">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="#">
-    <meta property="og:image" content="logo.png">
-    <meta property="og:description" content="Creative Fuel is a digital marketing company">
-    <meta property="og:site_name" content="Creative Fuels">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CreativeFuel-Home</title>
+	    <link rel="shortcut icon" type="image/jpg" href="http://creativefuel.io/assets/img/image20.png"/>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!-- gsap -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+	<!-- scrolltrigger -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+	<!-- CSS -->
+	<link rel="stylesheet" href="assets/index.css">
+	<!-- wow -->
+	<link rel="stylesheet" type="text/css" href="assets/animate.css">
+	<!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owl.theme.default.min.css">
+	<!-- javascript -->
+	<script src="assets/index.js"></script>
+	<!-- <script src="assets/skroller.js"></script> -->
+	<!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" type="text/css">
-    </noscript>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
-    <link rel="stylesheet" href="assets/main.css">
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142626544-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-142626544-1');
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/css/glide.core.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/css/glide.theme.css">
+	<script>
+    	 // preloader
+       setTimeout(function(){        
+        $('.get_load').fadeOut();
+        }, 2600);
+
+
+       $(window).scroll(function() {
+  if($(window).scrollTop() + $(window).height() >= $(document).height()){
+
+       $(window).load(function() {
+		  $('body').css({'overflow':'auto', 'height':'auto', 'position':'relative'});
+		});
+     //Your code here
+  }
+});
     </script>
+
 </head>
+<body>
+		
+<div id="mySidenavR" class="sidenavR">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNavR()">×</a>
+    <a href="index.html">Home</a>
+    <a href="#choose">Why Choose Us?</a>
+    <a href="#client">Our Clients</a>
+    <a href="#Ideologies">Ideologies</a>
+    <a href="#services">Services</a>
+    <a href="#ofc">Offices</a>
+    <a href="contact.html">Contact</a>
+</div>
 
-<body class="is-loading" data-barba="wrapper">
+	<script>
+		 function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
 
-    <div class="loader_block-1"></div>
-    <div class="loader_block-2"></div>
-    <div class="get_load">
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+
+    function openNavR() {
+        document.getElementById("mySidenavR").style.width = "250px";
+    }
+
+    function closeNavR() {
+        document.getElementById("mySidenavR").style.width = "0";
+    }
+	</script>
+	 <div class="get_load">
         <!-- <img src="images/animation website.gif" alt="load" class="img-fluid"> -->
         
     </div>
-
-    <div class="logo">
-        <img width="80" height="80" src="http://creativefuel.io/assets/img/image20.png" alt="Creativefuel" />
-    </div>
-
-    <div class="menu"><span>Menu</span></div>
-
-    <div class="menu_container">
-        <div class="menu_wrapper">
-            <div class="menu_close"><span>Close</span></div>
-            <nav class="main_nav">
-                <ul>
-                    <li><a href="#zoom_container">Home</a></li>
-                    <li><a href="#works">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#clients">Clients</a></li>
-                    <li><a href="works.html">Works</a></li>
-                </ul>
-                <div class="social_media">
-                    <a href="mailto:connect@creativefuel.io" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:grey;transform:;-ms-filter:"><path d="M20,4H6C4.897,4,4,4.897,4,6v5h2V8l6.4,4.8c0.178,0.133,0.389,0.2,0.6,0.2s0.422-0.067,0.6-0.2L20,8v9h-8v2h8 c1.103,0,2-0.897,2-2V6C22,4.897,21.103,4,20,4z M13,10.75L6.666,6h12.668L13,10.75z"></path><path d="M2 12H9V14H2zM4 15H10V17H4zM7 18H11V20H7z"></path></svg>
-                    </a>
-                    <a href="#" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:grey;transform:;-ms-filter:"><path d="M11.999,7.377c-2.554,0-4.623,2.07-4.623,4.623c0,2.554,2.069,4.624,4.623,4.624c2.552,0,4.623-2.07,4.623-4.624 C16.622,9.447,14.551,7.377,11.999,7.377L11.999,7.377z M11.999,15.004c-1.659,0-3.004-1.345-3.004-3.003 c0-1.659,1.345-3.003,3.004-3.003s3.002,1.344,3.002,3.003C15.001,13.659,13.658,15.004,11.999,15.004L11.999,15.004z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533,6.111c-0.469-1.209-1.424-2.165-2.633-2.632c-0.699-0.263-1.438-0.404-2.186-0.42 c-0.963-0.042-1.268-0.054-3.71-0.054s-2.755,0-3.71,0.054C7.548,3.074,6.809,3.215,6.11,3.479C4.9,3.946,3.945,4.902,3.477,6.111 c-0.263,0.7-0.404,1.438-0.419,2.186c-0.043,0.962-0.056,1.267-0.056,3.71c0,2.442,0,2.753,0.056,3.71 c0.015,0.748,0.156,1.486,0.419,2.187c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45 c0.963,0.042,1.268,0.055,3.71,0.055s2.755,0,3.71-0.055c0.747-0.015,1.486-0.157,2.186-0.419c1.209-0.469,2.164-1.424,2.633-2.633 c0.263-0.7,0.404-1.438,0.419-2.186c0.043-0.962,0.056-1.267,0.056-3.71s0-2.753-0.056-3.71C20.941,7.57,20.801,6.819,20.533,6.111z M19.315,15.643c-0.007,0.576-0.111,1.147-0.311,1.688c-0.305,0.787-0.926,1.409-1.712,1.711c-0.535,0.199-1.099,0.303-1.67,0.311 c-0.95,0.044-1.218,0.055-3.654,0.055c-2.438,0-2.687,0-3.655-0.055c-0.569-0.007-1.135-0.112-1.669-0.311 c-0.789-0.301-1.414-0.923-1.719-1.711c-0.196-0.534-0.302-1.099-0.311-1.669c-0.043-0.95-0.053-1.218-0.053-3.654 c0-2.437,0-2.686,0.053-3.655c0.007-0.576,0.111-1.146,0.311-1.687c0.305-0.789,0.93-1.41,1.719-1.712 c0.534-0.198,1.1-0.303,1.669-0.311c0.951-0.043,1.218-0.055,3.655-0.055c2.437,0,2.687,0,3.654,0.055 c0.571,0.007,1.135,0.112,1.67,0.311c0.786,0.303,1.407,0.925,1.712,1.712c0.196,0.534,0.302,1.099,0.311,1.669 c0.043,0.951,0.054,1.218,0.054,3.655c0,2.436,0,2.698-0.043,3.654H19.315z"></path></svg>
-                    </a>
-                    <a href="#" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:grey;transform:;-ms-filter:"><path d="M13.397,20.997v-8.196h2.765l0.411-3.209h-3.176V7.548c0-0.926,0.258-1.56,1.587-1.56h1.684V3.127 C15.849,3.039,15.025,2.997,14.201,3c-2.444,0-4.122,1.492-4.122,4.231v2.355H7.332v3.209h2.753v8.202H13.397z"></path></svg>
-                    </a>
-                </div>
-            </nav>
-        </div>
-    </div>
-
-    <div id="viewport">
-
-    <main id="main_content" class="is-home" data-barba="container" data-barba-namespace="home">
-
-        <div id="zoom_container" class="bg">
-
-            <section id="zoom_overlay" class="zoom_panel">
-                <svg id="zoom_svg" version="1.1" xmlns="//www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="100%" height="100%" viewBox="0 0 1600 900">
-                    <rect class="svg-knockout-text-bg" width="100%" height="100%" x="0" y="0" fill-opacity="1" mask="url(#svg-knockout-text)" />
-                    <mask id="svg-knockout-text">
-                        <rect width="100%" height="100%" fill="#fff" x="0" y="0" />
-                        <text x="50%" y="50%" fill="#00" text-anchor="middle" style="font-family: Monument-bold_1;">Creative Fuel</text>
-                    </mask>
-                </svg>
-            </section>
-
-            <section class="zoom_panel quote">
-               
-               
-                <div class="quote_text">
-                  <p>We make</p>
-                  <p>brands</p>
-                  <p>go viral</p>
-                </div>
-            </section>
-
-        </div>
-
-
-        <div class="hr right" id="about"></div>
-
-        <section id="works" class="works">
-            <div class="wrapper">
-                <h2 class="title text_stroke">A<span>B</span>o<span>u</span><span>t</span><br><span>U</span><span>S</span></h2>
-                <!-- <p class="title_solid">A<span>B</span>o<span>u</span><span>t</span><br><span>U</span><span>S</span></p> -->
-
-                <div class="works_container">
-
-                    <div class="works_box works_box-left">
-                        <div class="works_img">
-                            <div class="works_img-mask">
-                                <picture>
-                                    <!-- <source srcset="images/the-tour-guy-full.webp, 855w" type="image/webp"> -->
-                                    <img width="855" height="561" src="images/02.jpg" loading="lazy" alt="Custom WordPress webdesign and development" />
-                                </picture>
-                            </div>
-                        </div>
-                        <div class="works_info">
-                            <p class="works_year">ABCD</p>
-                            <p class="works_name text-center">adipisicing elit, sed do eiusmod</p>
-                        </div>
-                    </div>
-
-                    <div class="works_box works_box-right">
-                        <div class="works_img">
-                            <div class="works_img-mask">
-                                <picture>
-                                    <!-- <source srcset="images/9ine-gaming.webp, 855w" type="image/webp"> -->
-                                    <img width="855" height="561" src="images/02.jpg" loading="lazy" alt="Custom website development" />
-                                </picture>
-                            </div>
-                        </div>
-                        <div class="works_info">
-                            <p class="works_year">ABCD</p>
-                            <p class="works_name">adipisicing elit, sed do eiusmod</p>
-                        </div>
-                    </div>
-
-                    <div class="works_box works_box-left">
-                        <div class="works_img">
-                            <div class="works_img-mask">
-                                <picture>
-                                    <!-- <source srcset="images/paper-we-transfer.webp, 855w" type="image/webp"> -->
-                                    <img width="855" height="561" src="images/02.jpg" loading="lazy" alt="mobile first webdesign" />
-                                </picture>
-                            </div>
-                        </div>
-                        <div class="works_info">
-                            <p class="works_year">ABCD</p>
-                            <p class="works_name">adipisicing elit, sed do eiusmod</p>
-                        </div>
-                    </div>
-
-                    <div class="works_box works_box-right">
-                        <div class="works_img">
-                                <picture>
-                                    <!-- <source srcset="images/the-blonde-abroad.webp, 855w" type="image/webp"> -->
-                                    <img width="855" height="561" src="images/02.jpg" loading="lazy" alt="freelance website development" />
-                                </picture>
-                        </div>
-                        <div class="works_info">
-                            <p class="works_year">ABCD</p>
-                            <p class="works_name">adipisicing elit, sed do eiusmod</p>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-        <div class="hr"></div>
-
-        <section id="collab" class="collab" id="services">
-            <div class="wrapper">
-                <h2 class="title text_stroke">Our <br>Services</h2>
-                <!-- <p class="title_solid">Our <br>Services</p> -->
-                <p class="subtext">Over the years I have had the privilege and opportunity to collaborate with some well
-                    known companies & agencies, bringing their visions to life. You may have seen some of my past work
-                    with these select companies.
-                </p>
-            </div>
-
-            <div class="ticker_container">
-                <div class='ticker_wrapper-r'>
-                    <div class='ticker'>
-                        <a href="#" data-imagesmall="images/aamc-logo.png">Meme Marketing</a>
-                    </div>
-                </div>
-                <div class='ticker_wrapper-l'>
-                    <div class='ticker'>
-                        <a href="#" data-imagesmall="images/amgen-logo.png">Digital Marketing</a>
-                    </div>
-                </div>
-                <div class='ticker_wrapper-r'>
-                    <div class='ticker'>
-                        <a href="#" data-imagesmall="images/edelman-logo.png">IT Solutions</a>
-                    </div>
-                </div>
-                <div class='ticker_wrapper-l'>
-                    <div class='ticker'>
-                        <a href="#" data-imagesmall="images/the-tour-guy-logo.png">Infulencer Marketing</a>
-                    </div>
-                </div>
-                <div class='ticker_wrapper-r'>
-                    <div class='ticker'>
-                        <a href="#" data-imagesmall="images/the-tour-guy-logo.png">PR Agency</a>
-                    </div>
-                </div>
-                <div class='ticker_wrapper-l'>
-                    <div class='ticker'>
-                        <a href="#" data-imagesmall="images/the-tour-guy-logo.png">Youtube Marketing</a>
-                    </div>
-                </div>
-
-                <div class="image_box">
-                    <div class="image_inside"></div>
-                </div>
-
-            </div>
-
-        </section>
-
-        <div class="hr right"></div>
-
-        <section id="portfolio" class="portfolio" id="clients">
-            <h3 class="title text_stroke graphic"><span>O</span><span>u</span><span>r</span></h3>
-            <h4 class="title text_stroke design"><span>C</span><span>l</span><span>i</span><span>e</span><span>n</span><span>t</span><span>s</span></h4>
-<!--             <p class="title_solid graphic_solid">Our</p>
-            <p class="title_solid design_solid">Clients</p>
- -->
-            <div class="panel">
-                <div class="panel_item firstAn">
-                    <picture>
-                        <!-- <source srcset="images/bujou-pizza-sm.webp, 728w" type="image/webp"> -->
-                        <img class="panel_img firstSubAn" width="728" height="588" src="images/02.jpg" loading="lazy" alt="freelance graphic design" />
-                    </picture>
-                </div>
-            </div>
-
-            <div class="panel">
-                <div class="panel_item firstAn">
-                    <picture>
-                        <!-- <source srcset="images/leave-no-trace-sm.webp, 728w" type="image/webp"> -->
-                        <img class="panel_img firstSubAn" width="728" height="588" src="images/02.jpg" loading="lazy" alt="freelance web design" />
-                    </picture>
-                </div>
-            </div>
-
-            <div class="panel">
-                <div class="panel_item">
-                    <picture>
-                        <!-- <source srcset="images/presentation-sm.webp, 728w" type="image/webp"> -->
-                        <img class="panel_img secondAn" width="728" height="588" src="images/02.jpg" loading="lazy" alt="freelance web development" />
-                    </picture>
-                </div>
-            </div>
-
-            <div class="panel">
-                <div class="panel_item">
-                    <picture>
-                        <!-- <source srcset="images/explore-venice-sm.webp, 728w" type="image/webp"> -->
-                        <img class="panel_img secondAn" width="728" height="588" src="images/02.jpg" loading="lazy" alt="freelance website design" />
-                    </picture>
-                </div>
-            </div>
-
-            <div class="panel">
-                <div class="panel_item">
-                    <picture>
-                        <!-- <source srcset="images/scuba-diving-ad-sm.webp, 728w" type="image/webp"> -->
-                        <img class="panel_img secondAn" width="728" height="588" src="images/02.jpg" loading="lazy" alt="freelance website development" />
-                    </picture>
-                </div>
-            </div>
-
-            <div class="panel">
-                <div class="panel_item">
-                    <picture>
-                        <!-- <source srcset="images/food-drive-sm.webp, 728w" type="image/webp"> -->
-                        <img class="panel_img secondAn" width="728" height="588" src="images/02.jpg" loading="lazy" alt="website graphic design" />
-                    </picture>
-                </div>
-            </div>
-
-            <div class="panel">
-                <div class="panel_item">
-                    <picture>
-                        <!-- <source srcset="images/social-sunday-sm.webp, 728w" type="image/webp"> -->
-                        <img class="panel_img secondAn" width="728" height="588" src="images/02.jpg" loading="lazy" alt="web development in north carolina" />
-                    </picture>
-                </div>
-            </div>
-
-            <div class="panel">
-                <div class="panel_item">
-                    <picture>
-                        <!-- <source srcset="images/jordan-photography-logo.webp, 728w" type="image/webp"> -->
-                        <img class="panel_img secondAn" width="728" height="588" src="images/02.jpg" loading="lazy" alt="website design in north carolina" />
-                    </picture>
-                </div>
-            </div>
-
-            <div class="img_container">
-                <picture>
-                    <!-- <source srcset="images/bujou-pizza-lg.webp, 1200w" type="image/webp"> -->
-                    <img class="full_img" width="1200" height="628" src="images/02.jpg" loading="lazy" alt="freelance website design by robbie crenshaw" />
-                </picture>
-            </div>
-            <div class="img_container">
-                <picture>
-                    <!-- <source srcset="images/leave-no-trace-lg.webp, 600w" type="image/webp"> -->
-                    <img class="full_img" width="600" height="900" src="images/02.jpg" loading="lazy" alt="custom website design" />
-                </picture>
-            </div>
-            <div class="img_container">
-                <picture>
-                    <!-- <source srcset="images/presentation-lg.webp, 1080w" type="image/webp"> -->
-                    <img class="full_img" width="1080" height="608" src="images/02.jpg" loading="lazy" alt="custom website development" />
-                </picture>
-            </div>
-            <div class="img_container">
-                <picture>
-                    <!-- <source srcset="images/explore-venice-lg.webp, 1000w" type="image/webp"> -->
-                    <img class="full_img" width="1000" height="563" src="images/02.jpg" loading="lazy" alt="website design in the outer banks" />
-                </picture>
-            </div>
-            <div class="img_container">
-                <picture>
-                    <!-- <source srcset="images/scuba-diving-ad-lg.webp, 1200w" type="image/webp"> -->
-                    <img class="full_img" width="1200" height="628" src="images/02.jpg" loading="lazy" alt="web development in the outer banks" />
-                </picture>
-            </div>
-            <div class="img_container">
-                <picture>
-                    <!-- <source srcset="images/food-drive-lg.webp, 800w" type="image/webp"> -->
-                    <img class="full_img" width="800" height="884" src="images/02.jpg" loading="lazy" alt="animation based website design and development" />
-                </picture>
-            </div>
-            <div class="img_container">
-                <picture>
-                    <!-- <source srcset="images/social-sunday-lg.webp, 636w" type="image/webp"> -->
-                    <img class="full_img" width="636" height="900" src="images/02.jpg" loading="lazy" alt="top rated website design" />
-                </picture>
-            </div>
-            <div class="img_container">
-                <picture>
-                    <!-- <source srcset="images/jordan-photography-logo.webp, 634w" type="image/webp"> -->
-                    <img class="full_img" width="634" height="477" src="images/02.jpg" loading="lazy" alt="top rated website development" />
-                </picture>
-            </div>
-
-        </section>
-
-        <div class="hr"></div>
-
-        <!-- <div id="projectFacts" class="sectionClass">
-    <div class="fullWidth eight columns">
-        <div class="projectFactsWrap ">
-            <div class="item wow fadeInUpBig animated animated" data-number="500" style="visibility: visible;">
-                <i class="fa fa-briefcase"></i>
-                <p id="number1" class="number">500</p>
-                <span></span>
-                <p>Million+
-                    Combined Audience Base</p>
-            </div>
-            <div class="item wow fadeInUpBig animated animated" data-number="1200" style="visibility: visible;">
-                <i class="fa fa-smile-o"></i>
-                <p id="number2" class="number">1200</p>
-                <span></span>
-                <p>Happy clients</p>
-            </div>
-            <div class="item wow fadeInUpBig animated animated" data-number="400,000" style="visibility: visible;">
-                <i class="fa fa-coffee"></i>
-                <p id="number3" class="number">400,000</p>
-                <span></span>
-                <p>Viral Posts</p>
-            </div>
-            <div class="item wow fadeInUpBig animated animated" data-number="500" style="visibility: visible;">
-                <i class="fa fa-camera"></i>
-                <p id="number4" class="number">500</p>
-                <span></span>
-                <p>Million
-                    Combined Followers base</p>
-            </div>
-        </div>
-    </div>
-</div> -->
-
-        <!-- <div class="hr right"></div> -->
     
+	<!-- banner -->
+  <div class="bg-video-wrap text-center" id="home">
+	    <video src="images/video_1.mp4" loop muted autoplay>
+	    </video>
 
-              <section id="contact" class="contact">
+	    <div class="overlay">
+	    </div>
+	    <div class="container-fluid menu">
+		    <div class="row">
+		        <div class="col-md-12 text-center">
+		            <div class="row">
+		                <div class="col-md-2">
+		                	<a href="index.html"><img width="80" height="80" src="http://creativefuel.io/assets/img/image20.png" alt="Creativefuel" /></a>
 
-            <div class="wrapper">
-                <h3>Let's create something together,</h3>
-                <p>Drop me a <a href="#" target="_blank">line!</a></p>
-            </div>
+		                </div>
+		                <div class="col-md-8 text-center">
+		                </div>
+		                <div class="col-md-2">
+		                    <span style="font-size:30px;cursor:pointer;text-align: right;" onclick="openNavR()" class="underline_3">Menu</span>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+	    <div class="content">
+	    	<p class="wow fadeInLeft " data-wow-duration="1s" data-wow-delay="3s">Let us be the <span style="color:#F0B734">MARTIAN</span> into your <span style="color:#F0B734">SPACE</span></p>
+	    </div>
+  </div>
+ 
+  <!-- banner2 -->
+  <section class="py-5 banner2">
+  	<div class="container py-5">
+  		<p class="text-center wow fadeInLeft " data-wow-duration="2s">Let us be the <span style="color:#F0B734">MARTIAN</span> into your <span style="color:#F0B734">SPACE</span></p>
+  	</div>
+  </section>
 
-            <div class="info">
-                <div class="info_box">
-                    <ul>
-                        <li class="aniup">
-                            <a href="#" target="_blank">connect@creativefuel.io</a>
-                        </li>
-                        <li class="aniup">
-                            <a href="#" target="_blank">Instagram</a>
-                        </li>
-                        <li class="aniup">
-                            <a href="#" target="_blank">Facebook</a>
-                        </li>
-                    </ul>
+  <!-- slider -->
+  <section class="py-5 choose" id="choose">
+
+  	<div class="container choose_1">
+  		<div class="row">
+  			<div class="col-md-12 py-3">
+  				<h2 class="wow fadeInUp text-center" data-wow-duration="1s">WHY <span class="underline">CHOOSE</span> US?</h2>
+  				<p class="text-center pt-2 wow fadeInUp" data-wow-duration="1s">Because we focus on results. For us, it’s all about what adds value for you and your business.</p>
+  			</div>
+  		</div>
+  	
+  <div class="wrap">
+  
+  <!-- 
+   <div class="glide multi">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+        <li class="glide__slide">
+        	<img src="images/Strategy.png" alt="slide" class="img-fluid">
+        	<div class="overlay_2"></div>
+    		<p class="text-left pt-2 pl-5">WE GIVE WINGS <br> TO YOUR BUSINESS <br> YOU DECIDE WHERE TO FLY</p>
+    		<a href="contact.html" class="text-left pb-2 pl-5">Let's fly together <i class="fa fa-arrow-right"></i></a>
+        </li>
+        <li class="glide__slide">
+        	<img src="images/Strategy.png" alt="slide" class="img-fluid">
+        	<div class="overlay_2"></div>
+    		<p class="text-left pt-2 pl-5">WE GIVE WINGS <br> TO YOUR BUSINESS <br> YOU DECIDE WHERE TO FLY</p>
+    		<a href="contact.html" class="text-left pb-2 pl-5">Let's fly together <i class="fa fa-arrow-right"></i></a>
+        </li>
+        <li class="glide__slide">
+        	<img src="images/Strategy.png" alt="slide" class="img-fluid">
+        	<div class="overlay_2"></div>
+    		<p class="text-left pt-2 pl-5">WE GIVE WINGS <br> TO YOUR BUSINESS <br> YOU DECIDE WHERE TO FLY</p>
+    		<a href="contact.html" class="text-left pb-2 pl-5">Let's fly together <i class="fa fa-arrow-right"></i></a>
+        </li>
+        <li class="glide__slide">
+        	<img src="images/Strategy.png" alt="slide" class="img-fluid">
+        	<div class="overlay_2"></div>
+    		<p class="text-left pt-2 pl-5">WE GIVE WINGS <br> TO YOUR BUSINESS <br> YOU DECIDE WHERE TO FLY</p>
+    		<a href="contact.html" class="text-left pb-2 pl-5">Let's fly together <i class="fa fa-arrow-right"></i></a>
+        </li>
+        <li class="glide__slide">
+        	<img src="images/Strategy.png" alt="slide" class="img-fluid">
+        	<div class="overlay_2"></div>
+    		<p class="text-left pt-2 pl-5">WE GIVE WINGS <br> TO YOUR BUSINESS <br> YOU DECIDE WHERE TO FLY</p>
+    		<a href="contact.html" class="text-left pb-2 pl-5">Let's fly together <i class="fa fa-arrow-right"></i></a>
+        </li>
+        <li class="glide__slide">
+        	<img src="images/Strategy.png" alt="slide" class="img-fluid">
+        	<div class="overlay_2"></div>
+    		<p class="text-left pt-2 pl-5">WE GIVE WINGS <br> TO YOUR BUSINESS <br> YOU DECIDE WHERE TO FLY</p>
+    		<a href="contact.html" class="text-left pb-2 pl-5">Let's fly together <i class="fa fa-arrow-right"></i></a>
+        </li>
+        <li class="glide__slide">
+        	<img src="images/Strategy.png" alt="slide" class="img-fluid">
+        	<div class="overlay_2"></div>
+    		<p class="text-left pt-2 pl-5">WE GIVE WINGS <br> TO YOUR BUSINESS <br> YOU DECIDE WHERE TO FLY</p>
+    		<a href="contact.html" class="text-left pb-2 pl-5">Let's fly together <i class="fa fa-arrow-right"></i></a>
+        </li>
+        <li class="glide__slide">
+        	<img src="images/Strategy.png" alt="slide" class="img-fluid">
+        	<div class="overlay_2"></div>
+    		<p class="text-left pt-2 pl-5">WE GIVE WINGS <br> TO YOUR BUSINESS <br> YOU DECIDE WHERE TO FLY</p>
+    		<a href="contact.html" class="text-left pb-2 pl-5">Let's fly together <i class="fa fa-arrow-right"></i></a>
+        </li>
+        <li class="glide__slide">
+        	<img src="images/Strategy.png" alt="slide" class="img-fluid">
+        	<div class="overlay_2"></div>
+    		<p class="text-left pt-2 pl-5">WE GIVE WINGS <br> TO YOUR BUSINESS <br> YOU DECIDE WHERE TO FLY</p>
+    		<a href="contact.html" class="text-left pb-2 pl-5">Let's fly together <i class="fa fa-arrow-right"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div> -->
+  
+  
+  <div class="glide multi1 upslide1">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+        <li class="glide__slide">
+        	<img src="images/believe.jpg" alt="slide" class="img-fluid" width="100%" height="100%">
+        	<!-- <div class="overlay_2"></div> -->
+    		<p class="text-left pt-2 pl-5">WE BELIEVE IT’S OUR <br> RESPONSIBILITY TO <br> DELIVER BUSINESS OR FIRE US.</p>
+    		<a href="contact.html" class="text-left pb-2 pl-5">BUT FIRST HIRE US <i class="fa fa-arrow-right"></i></a>
+    	</li>
+    	<li class="glide__slide">
+        	<img src="images/era.jpg" alt="slide" class="img-fluid">
+        	<!-- <div class="overlay_2"></div> -->
+    		<p class="text-left pt-2 pl-5">IN ERA OF <br> DIGITALISATION <br> BE A TRENDSETTER</p>
+    		<a href="contact.html" class="text-left pb-2 pl-5">LET’S RISE TOGETHER <i class="fa fa-arrow-right"></i></a>
+    	</li>
+    	<li class="glide__slide">
+        	<img src="images/wish.jpg" alt="slide" class="img-fluid">
+        	<!-- <div class="overlay_2"></div> -->
+    		<p class="text-left pt-2 pl-5">WE UNDERSTAND THE <br> MEANING OF COMMITMENT, <br> TO BE PRIORITISED</p>
+    		<a href="contact.html" class="text-left pb-2 pl-5">LET’S MAKE A DEAL <i class="fa fa-arrow-right"></i></a>
+    	</li>
+    	<li class="glide__slide">
+        	<img src="images/wings.jpg" alt="slide" class="img-fluid">
+        	<!-- <div class="overlay_2"></div> -->
+    		<p class="text-left pt-2 pl-5">WE GIVE WINGS <br> TO YOUR BUSINESS <br> YOU DECIDE WHERE TO FLY</p>
+    		<a href="contact.html" class="text-left pb-2 pl-5">LET’S FLY TOGETHER <i class="fa fa-arrow-right"></i></a>
+    	</li>
+    	<li class="glide__slide">
+        	<img src="images/goal.jpg" alt="slide" class="img-fluid">
+        	<!-- <div class="overlay_2"></div> -->
+    		<p class="text-left pt-2 pl-5">WE GET YOUR GOALS</p>
+    		<a href="contact.html" class="text-left pb-2 pl-5"> LET’S ACHIEVE THEM TOGETHER <i class="fa fa-arrow-right"></i></a>
+    	</li>
+    	<li class="glide__slide">
+        	<img src="images/idea.jpg" alt="slide" class="img-fluid">
+        	<!-- <div class="overlay_2"></div> -->
+    		<p class="text-left pt-2 pl-5">WE GENERATE THE IDEAS</p>
+    		<a href="contact.html" class="text-left pb-2 pl-5"> LET’S PRODUCE TOGETHER <i class="fa fa-arrow-right"></i></a>
+    	</li>
+    	<li class="glide__slide">
+        	<img src="images/run.jpg" alt="slide" class="img-fluid">
+        	<!-- <div class="overlay_2"></div> -->
+    		<p class="text-left pt-2 pl-5">IN THE WORLD OF <br> COMPETITION  WE UNDERSTAND <br> THE NEED TO BE AGILE</p>
+    		<a href="contact.html" class="text-left pb-2 pl-5">LET’ S RUN TOGETHER <i class="fa fa-arrow-right"></i></a>
+    	</li>
+    	<li class="glide__slide">
+        	<img src="images/unconventional.jpg" alt="slide" class="img-fluid">
+        	<!-- <div class="overlay_2"></div> -->
+    		<p class="text-left pt-2 pl-5">WE ARE THE <br> CREATORS OF <br> UNCONVENTIONAL</p>
+    		<a href="contact.html" class="text-left pb-2 pl-5">LET’S INNOVATE TOGETHER <i class="fa fa-arrow-right"></i></a>
+    	</li>
+    	<li class="glide__slide">
+        	<img src="images/work.jpg" alt="slide" class="img-fluid">
+        	<!-- <div class="overlay_2"></div> -->
+    		<p class="text-left pt-2 pl-5">YOUR WISH IS OUR COMMAND</p>
+    		<a href="contact.html" class="text-left pb-2 pl-5">LET’S WORK TOGETHER <i class="fa fa-arrow-right"></i></a>
+    	</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="glide hero downslide2">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+        <li class="glide__slide">
+        	<img src="images/believe_1.jpg" alt="slide" class="img-fluid">
+        	<!-- <div class="overlay_2"></div> -->
+    		<p class="text-left pt-2 pl-5">WE BELIEVE IT’S OUR <br> RESPONSIBILITY TO <br> DELIVER BUSINESS OR FIRE US.</p>
+    		<a href="contact.html" class="text-left pb-2 pl-5">BUT FIRST HIRE US <i class="fa fa-arrow-right"></i></a>
+        </li>
+        <li class="glide__slide">
+        	<img src="images/era_1.jpg" alt="slide" class="img-fluid">
+        	<!-- <div class="overlay_2"></div> -->
+    		<p class="text-left pt-2 pl-5">IN ERA OF <br> DIGITALISATION <br> BE A TRENDSETTER</p>
+    		<a href="contact.html" class="text-left pb-2 pl-5">LET’S RISE TOGETHER <i class="fa fa-arrow-right"></i></a>
+        </li>
+        <li class="glide__slide">
+        	<img src="images/wish.jpg" alt="slide" class="img-fluid">
+        	<!-- <div class="overlay_2"></div> -->
+    		<p class="text-left pt-2 pl-5">WE UNDERSTAND THE <br> MEANING OF COMMITMENT, <br> TO BE PRIORITISED</p>
+    		<a href="contact.html" class="text-left pb-2 pl-5">LET’S MAKE A DEAL <i class="fa fa-arrow-right"></i></a>
+        </li>
+        <li class="glide__slide">
+        	<img src="images/wings_1.jpg" alt="slide" class="img-fluid">
+        	<!-- <div class="overlay_2"></div> -->
+    		<p class="text-left pt-2 pl-5">WE GIVE WINGS <br> TO YOUR BUSINESS <br> YOU DECIDE WHERE TO FLY</p>
+    		<a href="contact.html" class="text-left pb-2 pl-5">LET’S FLY TOGETHER <i class="fa fa-arrow-right"></i></a>
+        </li>
+        <li class="glide__slide">
+        	<img src="images/goal_1.jpg" alt="slide" class="img-fluid">
+        	<!-- <div class="overlay_2"></div> -->
+    		<p class="text-left pt-2 pl-5">WE GET YOUR GOALS</p>
+    		<a href="contact.html" class="text-left pb-2 pl-5"> LET’S ACHIEVE THEM TOGETHER <i class="fa fa-arrow-right"></i></a>
+        </li>
+        <li class="glide__slide">
+        	<img src="images/idea.jpg" alt="slide" class="img-fluid">
+        	<!-- <div class="overlay_2"></div> -->
+    		<p class="text-left pt-2 pl-5">WE GENERATE THE IDEAS</p>
+    		<a href="contact.html" class="text-left pb-2 pl-5"> LET’S PRODUCE TOGETHER <i class="fa fa-arrow-right"></i></a>
+        </li>
+        <li class="glide__slide">
+        	<img src="images/run_1.jpg" alt="slide" class="img-fluid">
+        	<!-- <div class="overlay_2"></div> -->
+    		<p class="text-left pt-2 pl-5">IN THE WORLD OF <br> COMPETITION  WE UNDERSTAND <br> THE NEED TO BE AGILE</p>
+    		<a href="contact.html" class="text-left pb-2 pl-5">Let's fly together <i class="fa fa-arrow-right"></i></a>
+        </li>
+        <li class="glide__slide">
+        	<img src="images/unconventional_1.jpg" alt="slide" class="img-fluid">
+        	<!-- <div class="overlay_2"></div> -->
+    		<p class="text-left pt-2 pl-5">WE ARE THE <br> CREATORS OF <br> UNCONVENTIONAL</p>
+    		<a href="contact.html" class="text-left pb-2 pl-5">LET’ S RUN TOGETHER <i class="fa fa-arrow-right"></i></a>
+        </li>
+        <li class="glide__slide">
+        	<img src="images/work_1.jpg" alt="slide" class="img-fluid">
+        	<!-- <div class="overlay_2"></div> -->
+    		<p class="text-left pt-2 pl-5">YOUR WISH IS OUR COMMAND</p>
+    		<a href="contact.html" class="text-left pb-2 pl-5">LET’S WORK TOGETHER <i class="fa fa-arrow-right"></i></a>
+        </li>
+      </ul>
+    </div>
+    <!-- <div class="glide__arrows" data-glide-el="controls">
+      <button class="glide__arrow glide__arrow--prev" data-glide-dir="<">prev</button>
+      <button class="glide__arrow glide__arrow--next" data-glide-dir=">">next</button> 
+    </div> -->
+  </div>
+ <!--  <h4>Carousel with 1 perView</h4>
+  <div class="glide hero">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+        <li class="glide__slide">1</li>
+        <li class="glide__slide">2</li>
+        <li class="glide__slide">3</li>
+        <li class="glide__slide">4</li>
+      </ul>
+    </div>
+    <div class="glide__arrows" data-glide-el="controls">
+      <button class="glide__arrow glide__arrow--prev" data-glide-dir="<">prev</button>
+      <button class="glide__arrow glide__arrow--next" data-glide-dir=">">next</button> 
+    </div>
+  </div>
+  
+  <h4>Carousel with 1 perView and peek</h4>
+  <div class="glide heropeek">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+        <img class="glide__slide" src="https://s3.envato.com/files/245544225/Inner-Poster-590x300.jpg">
+        <img class="glide__slide" src="http://teamsportbanners.com/skin/frontend/theme1/default/images/cms/softball-banner-design.JPG">
+        <img class="glide_slide" src="https://s3.envato.com/files/245544225/Inner-Poster-590x300.jpg">
+      </ul>
+    </div>
+    <div class="glide__arrows" data-glide-el="controls">
+      <button class="glide__arrow glide__arrow--prev" data-glide-dir="<">prev</button>
+      <button class="glide__arrow glide__arrow--next" data-glide-dir=">">next</button>
+    </div>
+  </div> -->
+  
+  
+ 
+  
+  
+  </div>
+</div>
+  </section>
+  <!-- client -->
+  <section class="py-5" id="client">
+  	<div class="container py-5 client">
+  		<div class="row">
+  			<div class="col-md-12">
+  				<h2 class="wow fadeInUp text-center" data-wow-duration="1s">OUR <span class="underline">CLIENTS</span></h2>
+  				<p class="text-center pt-2 wow fadeInUp" data-wow-duration="1s">BE THE NEXT BRAND FEATURED ON OUR WEBSITE</p>
+  			</div>
+  		</div>
+  		<div class="row py-5">
+  			<div class="col-lg-8 py-3">
+  				<img src="images/client_1.png" alt="choose_1" class="img-fluid wow bounceInUp " data-wow-duration="1.5s" width="100%" height="100%">
+  			</div>
+  			<div class="col-lg-4 py-3">
+  				<br><br>
+     				<h2 class=" wow bounceInUp " data-wow-duration="1.5s">MEDIA BUZZ</h2>
+    				<p class=" wow bounceInUp " data-wow-duration="1.5s">Social media is just a buzzword until you come up with a plan and we have a lot more.</p>
+  			</div>
+  		</div>
+  		<div class="row py-5">
+  			<div class="col-lg-4 py-3">
+  				<br><br>
+     				<h2 class="wow bounceInUp " data-wow-duration="1.5s">OUR BUSINESS PARTNERS</h2>
+    				<p class="wow bounceInUp " data-wow-duration="1.5s">Our ad campaigns will bring you the results you're looking for. From brand awareness campaigns to lead funnels, we have got the tools to create the right ads for your business.</p>
+  			</div>
+  			<div class="col-lg-8 py-3">
+  				<img src="images/logo(2).png" alt="choose_1" class="img-fluid wow bounceInUp " data-wow-duration="1.5s" width="100%" height="100%">
+  			</div>
+  		</div>
+  		<div class="row py-5">
+  			<div class="col-lg-8 py-3">
+  				<img src="images/logo(_3).png" alt="choose_1" class="img-fluid wow bounceInUp " data-wow-duration="1.5s" width="100%" height="100%">
+  			</div>
+  			<div class="col-lg-4 py-3">
+  				<br><br>
+     				<h2 class=" wow bounceInUp " data-wow-duration="1.5s">FEATURED IN</h2>
+    				<p class=" wow bounceInUp " data-wow-duration="1.5s">Our social media management services are perfect for growing your brand’s social community and engage with the right audience.</p>
+  			</div>
+  		</div>
+  	</div>
+  </section>
+
+  <!-- services -->
+  <section class="pb-5 services" id="Ideologies">
+  	<div class="py-5 container">
+  		<div class="row">
+  			<div class="col-md-12">
+  				<h2 class="wow fadeInDown text-center" data-wow-duration="1s">GREAT MINDS THINK ALIKE THAT’S WHAT WE ARE...</h2>
+  				<p class="wow fadeInUp pt-3" data-wow-duration="2s" data-wow-delay="0.5s">We have the skills to imaginate and we know how to be <span class="underline_2">CREATIVE</span>. You may  be “Wearing Too Many Hats" and looking to finally hand marketing and PR responsibilities to a capable team. So We are …</p>
+  			</div>
+  		    <div class="col-md-12">
+  		    	<ul class="text-center list-unstyled">
+  		    		<li class="wow fadeInDown py-2" data-wow-duration="1s" data-wow-delay="0.5s">Ambitious</li>
+  		    		<li class="wow fadeInUp py-2" data-wow-duration="1s" data-wow-delay="0.6s">Imaginative</li>
+  		    		<li class="wow fadeInDown py-2" data-wow-duration="1s" data-wow-delay="0.7s">Strategic</li>
+  		    		<li class="wow fadeInUp py-2" data-wow-duration="1s" data-wow-delay="0.8s">Innovative</li>
+  		    		<li class="wow fadeInDown py-2" data-wow-duration="1s" data-wow-delay="0.9s">Realistic </li>
+  		    		<li class="wow fadeInUp py-2" data-wow-duration="1s" data-wow-delay="1s">Unconventional</li>
+  		    		
+
+  		    	</ul>
+  		    </div>
+  		</div>
+  	</div>
+  </section>
+
+  <!-- slider -->
+  <section class="container py-5" id="services">
+    <div class="slider-wrapper d-xl-flex align-items-center">
+        <div class="owl-carousel main-carousel">
+            <div class="item slide1">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h2 class="pl-3 pr-3 text-left">Meme<br>
+                                <span>Market<span class="underline_5">KING</span></span></h2>
+                            <div class="slider-img d-block d-sm-none"><img alt="Steer Your Vision" class="img-fluid"
+                                    height="400px" src="images/owl_1.svg"
+                                    title="Steer Your Vision"></div>
+                            <p class="p-3">Meme marketing is one of the most powerful social media marketing strategies. With social media continually on the rise, meme marketing has transformed hundreds of brands social media marketing strategies.</p>
+                            
+                        </div>
+                        <div
+                            class="col-lg-6 d-flex align-items-center justify-content-center">
+                            <div class="slider-img d-none d-sm-flex justify-content-center"><img alt="Steer Your Vision"
+                                    class="img-fluid" height="400px"
+                                    src="images/owl_1.svg" title="Steer Your Vision">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="item slide1">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h2 class="pl-3 pr-3 text-left">PR<br>
+                                <span>Agency</span></h2>
+                            <div class="slider-img d-block d-sm-none"><img alt="ERP Implementation" class="img-fluid"
+                                    height="400px" src="images/owl_2.svg"
+                                    title="ERP Implementation"></div>
+                            <p class="p-3">We maximize visibility via strategic alliances with PR and modeling agencies that expand your network of influencers, bloggers, vloggers, and celebrities for a fee or in exchange for product.</p>
+                            
+                        </div>
+                        <div
+                            class="col-lg-6  d-flex align-items-center justify-content-center">
+                            <div class="slider-img d-none d-sm-flex justify-content-center"><img
+                                    alt="ERP Implementation" class="img-fluid" height="400px"
+                                    src="images/owl_2.svg" title="ERP Implementation"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item slide1">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h2 class="pl-3 pr-3 text-left">Influencer<br>
+                                <span>MarketKING</span></h2>
+                            <div class="slider-img d-block d-sm-none"><img alt="Software Development Service"
+                                    class="img-fluid" height="400px"
+                                    src="images/owl_3.svg"
+                                    title="Software Development Service"></div>
+                            <p class="p-3"> Influencer marketing is a form of social media marketing involving endorsements and product placement from influencers, people and organizations who have a foremost level of knowledge or social influence in their field.</p>
+                           
+                        </div>
+                        <div
+                            class="col-lg-6  d-flex align-items-center justify-content-center">
+                            <div class="slider-img d-none d-sm-flex justify-content-center"><img
+                                    alt="Software Development Service" class="img-fluid" height="400px"
+                                    src="images/owl_3.svg"
+                                    title="Software Development Service">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item slide1">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h2 class="pl-3 pr-3 text-left">IT<br>
+                                <span>Solution</span></h2>
+                            <div class="slider-img d-block d-sm-none"><img alt="Website Development" class="img-fluid"
+                                    height="400px" src="images/owl_4.svg"
+                                    title="Website Development"></div>
+                            <p class="p-3">We design and build customized websites that compliment and serve your business needs from e-commerce to a service-oriented platform.</p>
+                            
+                        </div>
+                        <div
+                            class="col-lg-6 d-flex align-items-center justify-content-center">
+                            <div class="slider-img d-none d-sm-flex justify-content-center"><img
+                                    alt="Website Development" class="img-fluid" height="400px"
+                                    src="images/owl_4.svg" title="Website Development"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item slide1">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h2 class="pl-3 pr-3 text-left">Digital<br>
+                                <span>MarketKING</span></h2>
+                            <div class="slider-img d-block d-sm-none"><img alt="Data Analysis" class="img-fluid"
+                                    height="400px" src="images/owl_5.svg" title="Data Analysis"></div>
+                            <p class="p-3">We combine media, technology and creative to deliver better results.A full-service digital agency, with roots in search engine marketing, means everything we do is measurable and accountable.</p>
+                            
+                        </div>
+                        <div
+                            class="col-lg-6 d-flex align-items-center justify-content-center">
+                            <div class="slider-img d-none d-sm-flex justify-content-center"><img alt="Data Analysis"
+                                    class="img-fluid" height="400px" src="images/owl_5.svg"
+                                    title="Data Analysis"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item slide1">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h2 class="pl-3 pr-3 text-left">Youtube<br>
+                                <span>MarketKING</span></h2>
+                            <div class="slider-img d-block d-sm-none"><img alt="IT Consulting" class="img-fluid"
+                                    height="400px" src="images/owl_6.svg" title="IT Consulting"></div>
+                            <p class="p-3">A Complete Guide to Creating, Promoting, and Optimizing Your Video Content. YouTube marketing can be an intimidating tool for brands. That’s why we’ve created this complete guide for YouTube pros and newcomers alike. 
+</p>
+                            
+                        </div>
+                        <div
+                            class="col-lg-6 d-flex align-items-center justify-content-center">
+                            <div class="slider-img d-none d-sm-flex justify-content-center"><img alt="IT Consulting"
+                                    class="img-fluid" height="400px" src="images/owl_6.svg"
+                                    title="IT Consulting"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+	$(document).ready(function () {
+  var mainOwl = $('.owl-carousel.main-carousel');
+	mainOwl.owlCarousel({
+		autoplay: true,
+		smartSpeed: 800,
+		loop: true,
+		nav: false,
+		navText: false,
+		dots: true,
+		mouseDrag: true,
+		margin: 10,
+		navigation: true,
+		navigationText: ['<span class="fa-stack"><i class="fa fa-circle fa-stack-1x"></i><i class="fa fa-chevron-circle-left fa-stack-1x fa-inverse"></i></span>', '<span class="fa-stack"><i class="fa fa-circle fa-stack-1x"></i><i class="fa fa-chevron-circle-right fa-stack-1x fa-inverse"></i></span>'],
+		slideBy: 1,
+		items: 1,
+	});
+
+	// tween for Main Slider Owl change 
+	mainOwl.on('changed.owl.carousel', function (e) {
+		var scrollController = new ScrollMagic.Controller();
+
+		$(".owl-carousel.main-carousel #first-p").each(function () {
+			var fadeUpScene = new ScrollMagic.Scene({
+				triggerElement: this,
+				triggerHook: 1
+			})
+				.setTween(TweenMax.from(this, 1, { scale: 0, ease: Power1.easeIn, delay: 1 }))
+				.addTo(scrollController)
+		})
+		$(".owl-carousel.main-carousel .slide1 img").each(function () {
+			var fadeUpScene = new ScrollMagic.Scene({
+				triggerElement: this,
+				triggerHook: 1
+			})
+				.setTween(TweenMax.from(this, 1, { x: 50, opacity: 1, ease: Power1.easeOut, delay: 0.5 }))
+				.addTo(scrollController)
+		})
+
+	});
+
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js"></script>
+     <script src="assets/owl.carousel.js"></script>
+
+     <!-- ofc -->
+
+     <section class="py-5 ofc" id="ofc">
+     	<div class="container">
+     		<div class="row py-3">
+     			<div class="col-md-6">
+     				<p>Where you can find our <br> <span class="underline_4">CreativeFuel</span> offices</p>
+     			</div>
+     			<div class="col-md-6">
+     				<br>
+     				<a href="contact.html"><button type="button" class="btn text-white explore">Explore</button></a>
+     			</div>
+     		</div>
+     		<div class="row pt-5">
+
+     			<div class="col-md-6">
+     				<h5>Indore</h5>
+                    <a href="https://www.google.com/maps/dir/creative+fuel" class="map"><p>View Map <i class="fa fa-arrow-right"></i></p></a>
+     			</div>
+     			<div class="col-md-6">
+                    <h5>Mumbai</h5>
+                    <a href="https://www.google.com/maps/dir/creative+fuel" class="map"><p>View Map <i class="fa fa-arrow-right"></i></p></a>     			
+                </div>
+     		</div>
+     	</div>
+     </section>
+
+     <!-- video -->
+
+
+  <section class="py-5 contactsec" id="Contact">
+  	<div class="bg-video-wrap_1">
+	    <video src="images/video_2.mp4" loop muted autoplay>
+	    </video>
+	    <div class="overlay">
+	    </div>
+	    <div class="content_1 wow fadeInLeft " data-wow-duration="1s">
+	    	<div class="row">
+	    		<div class="col-md-12 text-center pt-5">
+	    			<p class="pb-3">Let's Connect</p>
+	    			<div class="row">
+	    				<div class="col-md-6">
+	    					<a href="contact.html" ><button type="button" class="btn text-white contactsecbtn">For Your Career</button></a>
+	    				</div>
+	    				<div class="col-md-6">
+	    					<a href="contact.html" ><button type="button" class="btn text-white contactsecbtn">For Your Business</button></a>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+	</div>
+  </section>
+  <section class="py-5 contactsec_1">
+  	<div class="container">
+  		<div class="row">
+	    		<div class="col-md-12 text-center pt-5">
+	    			<p class="pb-3">Let's grow together</p>
+	    			<div class="row">
+	    				<div class="col-md-6">
+	    					<a href="contact.html" ><button type="button" class="btn text-white contactsecbtn">For Your Career</button></a>
+	    				</div>
+	    				<div class="col-md-6">
+	    					<a href="contact.html" ><button type="button" class="btn text-white contactsecbtn">For Your Business</button></a>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+  	</div>
+  </section>
+  <section class="py-5">
+  	<div class="container py-5">
+  		<div class="row">
+  			<div class="col-md-12 pb-4">
+  				<h4 class="wow fadeInUp " data-wow-duration="1s" data-wow-delay="0.5s">Let's create something together,<br> Drop us a <a href="mailto:connect@creativefuel.io?subject=feedback">Line</a>!</h4>
+  			</div>
+
+  			<div class="col-md-7 bg-light py-4 wow fadeInLeft " data-wow-duration="1s">
+  				<a href="mailto:connect@creativefuel.io?subject=feedback" class="wow fadeInUp text-dark" data-wow-duration="1s" data-wow-delay="1.2s">connect@creativefuel.io</a>
+  				<a href="https://www.instagram.com/creativefuel.pr/" target="_blank" class="wow fadeInUp text-dark" data-wow-duration="1s" data-wow-delay="1.3s">Instagram</a>
+  				<a href="https://www.facebook.com/Creativefuelio-108064270946273/" target="_blank" class="wow fadeInUp text-dark" data-wow-duration="1s" data-wow-delay="1.4s">Facebook</a>
+  			</div>
+  		</div>
+  	</div>
+  </section>
+
+  <footer class="py-3">
+  	<div class="row">
+  		<div class="col-md-12 text-center icon pb-3">
+  			<a href="https://www.instagram.com/creativefuel.pr/" class="mr-2"><i class="fa fa-instagram"></i></a>
+		  	<a href="https://www.facebook.com/Creativefuelio-108064270946273/" class="mr-2"><i class="fa fa-facebook"></i></a>
+		  	<a href="https://www.youtube.com/watch?v=hl6ebKO_EKs" class="mr-2"><i class="fa fa-youtube"></i></a>
+		  	<a href="https://www.linkedin.com/company/creative-fuel-io/mycompany/" class="mr-2"><i class="fa fa-linkedin"></i></a>
+		  	<a href="#" class="mr-2"><i class="fa fa-twitter"></i></a>
+  		</div>
+  		<div class="col-md-12">
+  			<p class="text-center">@creativefuel</p>	
+  		</div>
+  		<div class="col-md-12 fnav text-center ">
+		  	<a href="index.html">Home</a>	
+  			<a href="https://www.creativefuel.io/termsandconditions.html">Terms and condition</i></a>
+		  	<a href="#">Private Policy</i></a>
+  		</div>
+  	</div>
+  </footer>
+<script src="assets/wow.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"></script>
+<script>
+	//https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js
+
+// var glideMulti = new Glide('.multi', {
+//   type: 'slider',
+//   autoplay: 1500,
+//   focusAt: 'center',
+//   perView: 2
+// });
+
+var glideMulti1 = new Glide('.multi1', {
+  type: 'carousel',
+  autoplay: 2000,
+  perView: 3
+});
+
+// var glideHeroPeek = new Glide('.heropeek', {
+//   type: 'carousel',
+//   animationDuration: 1000,
+//   autoplay: 3000,
+//   focusAt: '1',
+//   startAt: 1,
+//   perView: 1,
+//    // set a value to show the previous and next slides peeking in
+//   peek: {
+//     before: 20,
+//     after: 20
+//   },
+//   gap: 0
+// });
+
+var glideHero = new Glide('.hero', {
+  type: 'carousel',
+  animationDuration: 2000,
+  autoplay: 1500,
+  focusAt: '1',
+  startAt: 1,
+  perView: 1, 
+});
+
+// glideMulti.mount();
+glideMulti1.mount();
+// glideHeroPeek.mount();
+glideHero.mount();
 
 
 
 
+</script>
+<script>
+	
+</script>
+<script>
+	// wow
 
 
-            <footer class="footer">
-                <p>&copy; CreativeFuel</p>
-            </footer>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
 
-        </section>
+</script>
 
-    </main>
-</div>
 
-   
-    <div class="circle"></div>
-
-    <script defer src="assets/main.js"></script>
-
-</body>
+    
+  </body>
 </html>
