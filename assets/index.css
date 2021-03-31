@@ -472,13 +472,13 @@ position: relative;
 	content: ' ';
 	width: 0px;
 	height: 900px;
-	border-bottom: 5px solid #F0B734;
+	border-bottom: 5px solid white;
 	z-index: 1;
 	transition: all 1s ease;
 }
 
 .glide__slide:hover:after {
-	width: 360px;
+	width: 390px;
 	height: 900px;
 	transition: all 1s ease;
 
@@ -975,10 +975,7 @@ div.owl-buttons {
 }
 
 
-.fnav a{
-	font-size: 2em;
-}
-}
+
 
 footer p {
 	font-size: 1.3em;
@@ -986,11 +983,7 @@ footer p {
 
 }
 
-footer p {
-	font-size: 1.3em;	
-	font-family: Poppins;
 
-}
 .c_slide2 {
 	display: none;
 }
@@ -1029,10 +1022,17 @@ footer p {
 @media screen and (max-width: 1024px) {
 	.icon_1 a i{
 	height: 80px;
+    line-height: 80px;
 	width: 80px;
 	font-size:40px; 
 }
 
 .atrate {
 	font-size: 2.5em;
+}
+
+.fnav a {
+	border-right: 1.5px solid white;
+	font-size: 2em;
+}
 }

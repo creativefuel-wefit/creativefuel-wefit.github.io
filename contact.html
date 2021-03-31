@@ -40,54 +40,72 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/css/glide.theme.css">
 
           <style>
-            body {
-              position: relative;}
+           
               .menu_1 {
+            
+            
+                /*position: fixed;*/
+                text-align: center;
+                color: #fff;
+                position: absolute;
+                top: 20px;
+                bottom: 0;
+              /*  left: 0;
+                right: 0;*/
+                margin: auto;
+                /*z-index: 3;*/
             }
-  /*position: fixed;*/
-  text-align: center;
-  color: #fff;
-  position: absolute;
-  top: 20px;
-  bottom: 0;
-/*  left: 0;
-  right: 0;*/
-  margin: auto;
-  /*z-index: 3;*/
+                .contact_1 {
+                  z-index: 999;
+                  height: 100vh;
+                }
+                h3 {
+                    font-size: 40px;
+                    font-family: Work Sans;
+                    color: white;
+                }
+
+
+                .form-group label {
+                    color: white;
+                    font-family: Work Sans;
+                }
+                .form-group input,.form-group input:hover,.form-group input:focus {
+                  box-shadow: 0 0 0 transparent;
+                  background-color: black;
+                  border: none;
+                  outline: none;
+                  border-bottom: 2px solid white;
+                }
+
+                .form-group textarea,.form-group textarea:hover,.form-group textarea:focus {
+                  box-shadow: 0 0 0 transparent;
+                  background-color: black;
+                  border: none;
+                  outline: none;
+                  border-bottom: 2px solid white;
+                }
+                .btn {
+                    background-color: white;
+                    color: black;
+                }
+                @media screen and (max-width: 1024px) {
+  .icon_1 a i{
+  height: 80px;
+    line-height: 80px;
+  width: 80px;
+  font-size:40px; 
 }
-    .contact_1 {
-      z-index: 999;
-    }
-    h3 {
-        font-size: 40px;
-        font-family: Work Sans;
-        color: white;
-    }
 
+.atrate {
+  font-size: 2.5em;
+}
 
-    .form-group label {
-        color: white;
-        font-family: Work Sans;
-    }
-    .form-group input,.form-group input:hover,.form-group input:focus {
-      box-shadow: 0 0 0 transparent;
-      background-color: black;
-      border: none;
-      outline: none;
-      border-bottom: 2px solid white;
-    }
-
-    .form-group textarea,.form-group textarea:hover,.form-group textarea:focus {
-      box-shadow: 0 0 0 transparent;
-      background-color: black;
-      border: none;
-      outline: none;
-      border-bottom: 2px solid white;
-    }
-    .btn {
-        background-color: white;
-        color: black;
-    }
+.fnav a {
+  border-right: 1.5px solid white;
+  font-size: 2em;
+}
+}
 
 
 </style>
@@ -207,21 +225,21 @@
 
        
             <footer class="py-3">
-    <div class="row">
-        <div class="col-md-12 text-center icon pb-3">
+    <div class="row pt-5">
+        <div class="col-md-12 text-center icon_1 py-3">
             <a href="https://www.instagram.com/creativefuel.pr/" class="mr-2"><i class="fa fa-instagram"></i></a>
             <a href="https://www.facebook.com/Creativefuelio-108064270946273/" class="mr-2"><i class="fa fa-facebook"></i></a>
             <a href="https://www.youtube.com/watch?v=hl6ebKO_EKs" class="mr-2"><i class="fa fa-youtube"></i></a>
             <a href="https://www.linkedin.com/company/creative-fuel-io/mycompany/" class="mr-2"><i class="fa fa-linkedin"></i></a>
             <a href="#" class="mr-2"><i class="fa fa-twitter"></i></a>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12 atrate">
             <p class="text-center">@creativefuel</p>    
         </div>
         <div class="col-md-12 fnav text-center ">
             <a href="index.html">Home</a>    
-            <a href="https://www.creativefuel.io/termsandconditions.html">Terms and condition</i></a>
-            <a href="#">Private Policy</i></a>
+            <a href="https://www.creativefuel.io/termsandconditions.html">Terms and conditions</i></a>
+            <a href="#">Privacy and Policy</i></a>
         </div>
     </div>
   </footer>
