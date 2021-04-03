@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 	font-family: Work Sans;
 	color: white;
-	/*text-align: justify-all;*/
+	text-align: justify-all;
 }
 
 
@@ -71,7 +71,7 @@ hr:after {
 	transition: all 1s ease;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1020px) {
 	.underline {
 	position: relative;
 	border: none;
@@ -134,7 +134,7 @@ hr:after {
 	transition: all 1s ease;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1020px) {
 	.underline_2:after {
 	position: absolute;
 	top: 0;
@@ -189,7 +189,7 @@ hr:after {
 	transition: all 1s ease;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1020px) {
 	.underline_4:after {
 	position: absolute;
 	top: 0;
@@ -224,7 +224,7 @@ hr:after {
 	transition: all 1s ease;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1020px) {
 	.underline_5:after {
 	position: absolute;
 	top: 0;
@@ -258,7 +258,7 @@ hr:after {
 	transition: all 1s ease;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1020px) {
 	.underline_6:after {
 	position: absolute;
 	top: 0;
@@ -319,7 +319,14 @@ hr:after {
   height: 50vh;
   background:  no-repeat center;
 }
-video {
+.bg-video-wrap_2 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 70vh;
+  background:  no-repeat center;
+}
+.v1, .v2, .v3 {
   min-width: 100%;
   height: auto;
   z-index: 1;  
@@ -407,7 +414,7 @@ bottom: 0;
 	.bg-video-wrap {
 		height: 30vh;
 	}
-	video {
+	.v1, .v2 {
 		/*height: 30vh;*/
 	}
 	.content {
@@ -442,7 +449,7 @@ bottom: 0;
 	font-size: 1.5em;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1020px) {
 	.choose  h2{
 	font-weight: bold;
 	font-size: 4em;
@@ -482,7 +489,7 @@ position: relative;
 
 .glide__slide:hover:after {
 	left: 10px;
-	width: 373px;
+	width: 370px;
 	height: 900px;
 	transition: all 1s ease;
 
@@ -546,7 +553,7 @@ position: relative;
 	font-size: 2.5em;
 
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1020px) {
 	 .glide__slide p {
 	 	font-size: 2em;
 	 }
@@ -696,7 +703,7 @@ position: relative;
   font-size: 1.5em;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1020px) {
 	.client h2 {
   font-weight: bold;
   font-size:4em;
@@ -808,7 +815,7 @@ div.owl-buttons {
   font-size: 1.5em;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1020px) {
 	.services h2 {
 	  font-weight: bold;
 	  font-size: 4em;
@@ -840,7 +847,7 @@ div.owl-buttons {
 	font-size: 1.2em;
 	font-weight: bold;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1020px) {
 	.Ideologies h2 {
 	font-weight: bold;
 	font-size: 4em;
@@ -880,7 +887,7 @@ div.owl-buttons {
 	transition: 1s all;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1020px) {
 	.ofc p {
 	font-size: 3em;
 }
@@ -932,7 +939,7 @@ div.owl-buttons {
 
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1020px) {
 	.contactsec_1 .contactsecbtn {
 		font-size: 2em;
 	}
@@ -968,7 +975,7 @@ div.owl-buttons {
 	font-size: 2em;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1020px) {
 	.link_1 {
 		display: none;
 	}
@@ -992,7 +999,7 @@ footer p {
 .c_slide2 {
 	display: none;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1020px) {
 	.c_slide1 {
 		display: none;
 	}
@@ -1024,7 +1031,7 @@ footer p {
 }
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1020px) {
 	.icon_1 a i{
 	height: 80px;
     line-height: 80px;
@@ -1042,3 +1049,129 @@ footer p {
 }
 }
 
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+
+      /*aboutus*/
+
+      .panel-heading:hover {
+    cursor:pointer;
+}
+.panel-heading {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;    
+}
+
+.side-tab:hover {
+        cursor: pointer;
+    }
+    .panel.panel-default {
+        border: none;
+        box-shadow: none !important;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        
+    }
+    .panel-heading {
+        border: none;
+        background-color: #eee;
+    
+    }
+    .panel-body {
+        background-color: #f5f5f5;
+    }
+    .panel-title {
+        font-weight: 400;
+        color: $white;
+    }
+
+#team2,#team3 {
+	display: none;
+}
+
+.insta, .face, .tweet,.linked,  .social {
+	background-color: white;
+	border-radius: 50%;
+	height: 250px;
+	width: 250px;
+}
+
+@media screen and (max-width: 1024px) {
+	.insta, .face, .tweet,.linked,  .social {
+	width: 100%;
+
+	border-radius: 0%;
+	
+}
+}
+
+.insta h4 , .face h4, .tweet h4,.linked h4,  .social h4 {
+	color: black;
+}
+
+.insta h6 , .face h6, .tweet h6,.linked h6,  .social h6 {
+	color: black;
+}
+
+.insta p , .face p, .tweet p,.linked p,  .social p {
+	color: black;
+}
+
+.counter {
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
+.v3 {
+	width: 100%;
+	height: auto;
+}
+
+/*.wrapper{
+    display:table;
+    width:auto;
+    position:relative;
+    width:50%;
+}*/
+.playpause {
+    background-image:url('../images/button.png');
+    background-repeat:no-repeat;
+    width:50%;
+    height:50%;
+    position:absolute;
+    left:0%;
+    right:0%;
+    top:0%;
+    bottom:0%;
+    margin:auto;
+    z-index: 2;
+    background-size:contain;
+    background-position: center;
+}
