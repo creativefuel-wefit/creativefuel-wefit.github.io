@@ -67,7 +67,16 @@
     <a href="index.html#ofc">Offices</a>
     <a href="contact.html">Contact</a>
 </div>
-
+<div id="mySidenavR1" class="sidenavR1">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNavR1()">×</a>
+    <a href="index.html">Home</a>
+    <a href="#choose">Why Choose Us?</a>
+    <a href="#services">Services</a>
+    <!-- <a href="#Ideologies">Ideologies</a> -->
+    <a href="#client">Our Clients</a>
+    <a href="#ofc">Offices</a>
+    <a href="contact.html">Contact</a>
+</div>
   <script>
      function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
@@ -85,7 +94,25 @@
         document.getElementById("mySidenavR").style.width = "0";
     }
   </script>
-  
+   <script>
+         function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+
+    function openNavR1() {
+        document.getElementById("mySidenavR1").style.width = "400px";
+    }
+
+    function closeNavR1() {
+        document.getElementById("mySidenavR1").style.width = "0";
+    }
+
+
+    </script>
           <div class="container-fluid pt-3">
                   <div class="row">
                       <div class="col-md-12 text-center">
@@ -97,7 +124,9 @@
                               <div class="col-md-8 text-center">
                               </div>
                               <div class="col-md-2">
-                                  <span style="font-size:30px;cursor:pointer;text-align: right;color: #F0B734" onclick="openNavR()">Menu</span>
+                                  <span style="font-size:30px;cursor:pointer;text-align: right;color: #F0B734" onclick="openNavR()" class="nav1">Menu</span>
+                        <span style="font-size:30px;cursor:pointer;text-align: right;color: #F0B734" onclick="openNavR1()" class="nav2">Menu</span>
+
                               </div>
                           </div>
                       </div>
