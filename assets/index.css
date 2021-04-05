@@ -326,7 +326,15 @@ hr:after {
   height: 70vh;
   background:  no-repeat center;
 }
-.v1, .v2, .v3 {
+
+.bg-video-wrap_3 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 70vh;
+  background:  no-repeat center;
+}
+.v1, .v2, .v3{
   min-width: 100%;
   height: auto;
   z-index: 1;  
@@ -408,10 +416,10 @@ bottom: 0;
 	display: none;
 }
 @media screen and (max-width: 1024px) {
-	.bg-video-wrap {
+	/*.bg-video-wrap {
 		height: 30vh;
-	}
-	.bg-video-wrap {
+	}*/
+	.bg-video-wrap,.bg-video-wrap_3 {
 		height: 30vh;
 	}
 	.v1, .v2 {
@@ -772,7 +780,7 @@ position: relative;
 }
 
 .owl-carousel.main-carousel .owl-dots .owl-dot.active, .owl-carousel.main-carousel .owl-dots .owl-dot:hover { 
-  background: #00acc1;
+  background: #F0B734;
   border:1px solid white; 
 }
 .owl-nav > div { 
@@ -806,7 +814,9 @@ div.owl-buttons {
 	font-size: 1.5em;
 }
 
-
+/* .img1:hover  {
+                            content: url('http://dummyimage.com/100x100/eb00eb/fff');
+                        }*/
 .services h2 {
   font-weight: bold;
   font-size: 2.5em;
@@ -1030,6 +1040,11 @@ footer p {
 	text-align: center;
 }
 
+.atrate p a {
+	color: white;
+	text-decoration: none;
+}
+
 
 @media screen and (max-width: 1020px) {
 	.icon_1 a i{
@@ -1039,7 +1054,7 @@ footer p {
 	font-size:40px; 
 }
 
-.atrate {
+.atrate p a {
 	font-size: 2.5em;
 }
 
@@ -1048,32 +1063,15 @@ footer p {
 	font-size: 2em;
 }
 }
+	.more {
+		background-color: transparent;
+		border: 2px solid #F0B734;
+		color: white;
+	}
 
-    .swiper-container {
-        width: 100%;
-        height: 100%;
-      }
-
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
-
+	.more:hover {
+		color: white;
+	}
 
       /*aboutus*/
 
@@ -1174,4 +1172,123 @@ footer p {
     z-index: 2;
     background-size:contain;
     background-position: center;
+}
+
+.box{
+    background: linear-gradient(180deg, #F0B734 0%, #F0B734 100%);
+    font-family: 'Nanum Gothic', sans-serif;
+    /*border-radius: 25px 0;*/
+    position: relative;
+    overflow: hidden;
+}
+.box:before,
+.box:after,
+.box .box-content:before,
+.box .box-content:after{
+    content: "";
+    background: #000;
+    width: 50%;
+    height: 4px;
+    transform: scaleX(0);
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+    transition: all 600ms ease;
+}
+.box:after{
+    top: auto;
+    bottom: 15px;
+    left: auto;
+    right: 15px;
+}
+.box .box-content:before,
+.box .box-content:after{
+    width: 4px;
+    height: 50%;
+    transform: scaleY(0);
+}
+.box .box-content:after{
+    left: auto;
+    right: 15px;
+    top: auto;
+    bottom: 15px;
+}
+.box:hover:before,
+.box:hover:after,
+.box:hover .box-content:before,
+.box:hover .box-content:after{
+    transform: scale(1);
+}
+.box img{
+    width: 100%;
+    height: auto;
+    transform: scale3d(1.1, 1.1, 1);
+    transition: all 0.25s linear;
+}
+.box:hover img{
+    opacity: 0.25;
+    transform: scale(1.25);
+}
+.box .inner-content{
+    color: #000;
+    text-align: center;
+    width: 70%;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transition: all 600ms ease;
+}
+.box:hover .inner-content{
+    opacity: 1;
+    top: 50%;
+}
+.box .title{
+	color: #000;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 3px;
+}
+.box .post{
+	color: #000;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0 0 12px;
+    display: block;
+}
+.box .icon{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.box .icon li{
+    display: inline-block;
+    margin: 0 4px;
+}
+.box .icon li a{
+    color: #F0B734;
+    font-size: 18px;
+    line-height: 32px;
+    height: 35px;
+    width: 35px;
+    border: 2px solid #000;
+    /*border-radius: 10px 0 10px 0;*/
+    display: block;
+    transition: all 0.3s;
+}
+.box .icon li a i:hover {
+	color: #F0B734;
+}
+.box .icon li a:hover{
+    color: #F0B734;
+    background: #000;
+    /*border-radius: 0 10px 0 10px;*/
+}
+@media only screen and (max-width:990px){
+    .box { margin: 0 0 30px; }
 }

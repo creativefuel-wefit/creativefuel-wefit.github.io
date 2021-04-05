@@ -1,12 +1,15 @@
-function myFunction(x) {
-  if (x.matches) { // If media query matches
-      $("#myDIV").removeClass("wow");
-      $("#myDIV1").removeClass("wow");
-
-
-  } 
-}
-
-var x = window.matchMedia("(max-width: 800px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes
+ wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
