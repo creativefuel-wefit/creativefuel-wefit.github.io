@@ -276,9 +276,37 @@ hr:after {
 .sidenav a,.sidenavR a{color:#818181;display:block;font-size:25px;padding:8px 8px 8px 32px;text-decoration:none;transition:.3s;}
 .sidenav a:hover,.offcanvas a:focus,.sidenavR a:hover,.offcanvas a:focus{color:#f1f1f1;}
 .sidenav .closebtn,.sidenavR .closebtn{font-size:36px;margin-left:50px;position:absolute;right:25px;top:0;}
-@media screen and max-height 450px {
+
+
+@media screen and (max-width:1200px) {
 .sidenav,.sidenavR{padding-top:15px;}
 .sidenav a,.sidenavR a{font-size:18px;}
+.sidenavR {
+	display: none;
+}
+.nav1 {
+	display: none;
+}
+}
+
+.sidenav{background-color:#111;height:100%;left:0;overflow-x:hidden;padding-top:60px;position:fixed;top:0;transition:.5s;width:0;z-index:999;}
+.sidenavR1{background-color:#111;height:100%;overflow-x:hidden;padding-top:60px;position:fixed;right:0;top:0;transition:.5s;width:0;z-index:999;}
+.sidenav a,.sidenavR1 a{color:#818181;display:block;font-size:25px;padding:8px 8px 8px 32px;text-decoration:none;transition:.3s;}
+.sidenav a:hover,.offcanvas a:focus,.sidenavR1 a:hover,.offcanvas a:focus{color:#f1f1f1;}
+.sidenav .closebtn,.sidenavR1 .closebtn{font-size:36px;margin-left:50px;position:absolute;right:25px;top:0;}
+
+.nav2 {
+	display: none;
+}
+@media screen and (max-width:1200px) {
+.sidenav,.sidenavR1{padding-top:50px;}
+.sidenav a,.sidenavR1 a{font-size:2.5em;}
+.sidenav1 {
+	display: block;
+}
+.nav2 {
+	display: block;
+}
 }
 .menu {
 	/*position: fixed;*/
