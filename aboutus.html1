@@ -19,9 +19,6 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="assets/index.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
 </head>
 <body>
 	<div id="mySidenavR" class="sidenavR">
@@ -70,7 +67,7 @@
 		                <div class="col-md-8 text-center">
 		                </div>
 		                <div class="col-md-2">
-		                    <span style="font-size:30px;cursor:pointer;text-align: right;color: #F0B734" onclick="openNavR()">Menu</span>
+		                    <span style="font-size:30px;cursor:pointer;text-align: right;" onclick="openNavR()" class="underline_3">Menu</span>
 		                </div>
 		            </div>
 		        </div>
@@ -309,56 +306,90 @@
 });
   </script>
 
-  <!-- team -->
-
-  <section class="py-5">
-    <div class="container-fluid">
-       <div class="row">
-        <div class="col-md-12">
-          <h2>OUR TEAM</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-3">
-          <div class="box">
-                <img src="images/demo_client.jpg">
-                <div class="box-content">
-                    <div class="inner-content">
-                        <h3 class="title">Williamson</h3>
-                        <span class="post">Web designer</span>
-                        <ul class="icon">
-                            <li><a href="#"><i class="fa fa-search"></i></a></li>
-                            <li><a href="#"><i class="fa fa-link"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- how it's done -->
   <section class="py-5">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
-          <h2>OUR TEAM</h2>
+          <h2>ABOUT OUR EXISTING CUSTOMERS</h2>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6">
-          <img src="" alt="">
-          image          
+        <div class="col-lg">
+          <!-- <img src="images/demo_client.jpg" alt="" style="border-radius: 50%"> -->
+          <div class="card" style="width:400px">
+            <img class="card-img-top img-fluid mx-auto d-block" src="images/demo_client.jpg" alt="" style="border-radius: 50%;width: 150px;height: 150px;">
+          <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
         </div>
-        <div class="col-md-6">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <button type="button" class="btn btn-dark">Join Our Team</button>
+        </div>
+        <div class="col-lg">
+          <!-- <img src="images/demo_client.jpg" alt="" style="border-radius: 50%"> -->
+          <div class="card" style="width:400px">
+            <img class="card-img-top img-fluid mx-auto d-block" src="images/demo_client.jpg" alt="" style="border-radius: 50%;width: 150px;height: 150px;">
+          <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
+        </div>
+        </div>
+        <div class="col-lg">
+          <!-- <img src="images/demo_client.jpg" alt="" style="border-radius: 50%"> -->
+          <div class="card" style="width:400px">
+            <img class="card-img-top img-fluid mx-auto d-block" src="images/demo_client.jpg" alt="" style="border-radius: 50%;width: 150px;height: 150px;">
+          <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
+        </div>
+        </div>
+        <div class="col-lg">
+          <!-- <img src="images/demo_client.jpg" alt="" style="border-radius: 50%"> -->
+          <div class="card" style="width:400px">
+            <img class="card-img-top img-fluid mx-auto d-block" src="images/demo_client.jpg" alt="" style="border-radius: 50%;width: 150px;height: 150px;">
+          <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
+        </div>
+        </div>
+        <div class="col-lg">
+          <!-- <img src="images/demo_client.jpg" alt="" style="border-radius: 50%"> -->
+          <div class="card" style="width:400px">
+            <img class="card-img-top img-fluid mx-auto d-block" src="images/demo_client.jpg" alt="" style="border-radius: 50%;width: 150px;height: 150px;">
+          <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
+        </div>
+        </div>
+        <div class="col-lg">
+          <!-- <img src="images/demo_client.jpg" alt="" style="border-radius: 50%"> -->
+          <div class="card" style="width:400px">
+            <img class="card-img-top img-fluid mx-auto d-block" src="images/demo_client.jpg" alt="" style="border-radius: 50%;width: 150px;height: 150px;">
+          <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
+        </div>
+        </div>
+        <div class="col-lg">
+          <!-- <img src="images/demo_client.jpg" alt="" style="border-radius: 50%"> -->
+          <div class="card" style="width:400px">
+            <img class="card-img-top img-fluid mx-auto d-block" src="images/demo_client.jpg" alt="" style="border-radius: 50%;width: 150px;height: 150px;">
+          <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
+        </div>
         </div>
       </div>
     </div>
