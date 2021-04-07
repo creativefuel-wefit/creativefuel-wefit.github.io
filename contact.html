@@ -344,9 +344,38 @@
                           </div>
                           <div class="col-md-6">
                               <div class="form-group">
-                                <input type="text" name="company" id="company" required placeholder="Company" class="form-control">
+                                  <select name="type" id="type" class="form-control" style="background-color:black" onchange="company_field(this.value)">
+                                      <option value="Individual">Individual</option>
+                                      <option value="Company">Company</option>
+                                  </select>
+
                               </div>
                           </div>
+                        </div>
+
+                          <script>
+                              function company_field(val){
+
+                               if(val==="Individual"){
+                                    document.getElementById('company_name').style.display='none';
+                                    document.getElementById('company_name').required=false;}
+                            else
+                                        {document.getElementById('company_name').style.display='block';
+                                        document.getElementById('company_name').required=true;
+                                        }
+
+                              }
+
+
+
+                          </script>
+                          <div class="row py-4" style="display:none" id="company_name">
+                          <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="Text" name="Company Name" id="field" required placeholder="Name of company" class="form-control" >
+                              </div>
+                          </div>
+
                         </div>
 
                         <div class="row py-4">
