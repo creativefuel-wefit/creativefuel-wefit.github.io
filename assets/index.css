@@ -3,6 +3,7 @@
 	font-family: Work Sans;
 	color: white;
 	text-align: justify-all;
+
 }
 
 
@@ -33,23 +34,7 @@ body {
 }
 
 
-hr {
-	position: relative;
-	width: 100%;
-	height: 50px;
-	z-index: 1;
-}
-hr:after {
-	position: absolute;
-	top: 0;
-	left: 0;
-	content: ' ';
-	width: 70%;
-	height: 2px;
-	background-color: white;
-	z-index: -1;
-	transition: all 1s ease;
-}
+
 .underline {
 	position: relative;
 	border: none;
@@ -1101,6 +1086,12 @@ footer p {
 		color: white;
 	}
 
+	@media screen and (max-width: 1024px) {
+		.more {
+			font-size: 2em;
+		}
+	}
+
       /*aboutus*/
 
       .panel-heading:hover {
@@ -1138,9 +1129,7 @@ footer p {
         color: $white;
     }
 
-#team2,#team3 {
-	display: none;
-}
+
 
 .insta, .face, .tweet,.linked,  .social {
 	background-color: white;
@@ -1319,4 +1308,29 @@ footer p {
 }
 @media only screen and (max-width:990px){
     .box { margin: 0 0 30px; }
+}
+
+.about-service {
+	box-shadow: 2px 2px 7px grey,-2px -2px 7px grey;
+}
+
+.team p ,.team h2 {
+	color: black;
+}
+
+/*service*/
+
+
+.ser2 {
+	display: none;
+}
+
+@media screen and (max-width: 1024px) {
+	.ser1 {
+		display: none;
+	}
+
+	.ser2 {
+		display: block;
+	}
 }

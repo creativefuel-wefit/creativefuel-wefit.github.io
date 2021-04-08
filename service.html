@@ -3,10 +3,13 @@
 <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="We're defining brands on social media">
+         <meta name="keywords" content="HTML, CSS, JavaScript">
+         <meta name="author" content="John Doe">
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
         <link rel="shortcut icon" type="image/jpg" href="http://creativefuel.io/assets/img/image20.png"/>
 
-        <title>CreativeFuel-About Us</title>
+        <title>CreativeFuel-Services</title>
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -47,13 +50,22 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeNavR()">×</a>
     <a href="index.html">Home</a>
     <a href="index.html#choose">Why Choose Us?</a>
+    <a href="service.html">Services</a>
+    <!-- <a href="#Ideologies">Ideologies</a> -->
+    <a href="index.html#client">Our Clients</a>
+    <a href="index.html#ofc">Offices</a>
+    <a href="contact.html">Contact</a>
+</div>
+<div id="mySidenavR1" class="sidenavR1">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNavR1()">×</a>
+    <a href="index.html">Home</a>
+    <a href="index.html#choose">Why Choose Us?</a>
     <a href="index.html#services">Services</a>
     <!-- <a href="#Ideologies">Ideologies</a> -->
     <a href="index.html#client">Our Clients</a>
     <a href="index.html#ofc">Offices</a>
     <a href="contact.html">Contact</a>
 </div>
-
         <script>
                  function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
@@ -71,7 +83,25 @@
         document.getElementById("mySidenavR").style.width = "0";
     }
         </script>
+         <script>
+         function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
 
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+
+    function openNavR1() {
+        document.getElementById("mySidenavR1").style.width = "400px";
+    }
+
+    function closeNavR1() {
+        document.getElementById("mySidenavR1").style.width = "0";
+    }
+
+
+    </script>
          <div class="bg-video-wrap_3 text-center" id="home">
             <video src="images/video_1.mp4" loop muted autoplay class="v1">
             </video>
@@ -82,21 +112,23 @@
                     <div class="row">
                         <div class="col-lg-12 text-center">
                             <div class="row">
-                                <div class="col-lg-2">
+                                <div class="col-md-2">
                                         <a href="index.html"><img width="80" height="80" src="http://creativefuel.io/assets/img/image20.png" alt="Creativefuel" /></a>
 
                                 </div>
-                                <div class="col-lg-8 text-center">
+                                <div class="col-md-8 text-center">
                                 </div>
-                                <div class="col-lg-2">
-                                    <span style="font-size:30px;cursor:pointer;text-align: right;color: #F0B734" onclick="openNavR()">Menu</span>
+                                <div class="col-md-2">
+                                    <span style="font-size:30px;cursor:pointer;text-align: right;color: #F0B734" onclick="openNavR()" class="nav1">Menu</span>
+                                    <span style="font-size:30px;cursor:pointer;text-align: right;color: #F0B734" onclick="openNavR1()" class="nav2">Menu</span>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             <div class="content">
-                <p class="wow fadeInLeft " data-wow-duration="1s" data-wow-delay="3s">OUR <span style="color:#F0B734">SERVICES</span></p>
+                <p class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="3s">OUR <span style="color:#F0B734">SERVICES</span></p>
             </div>
   </div>
 
@@ -108,16 +140,16 @@
   </section>
  
 
-<section class="py-5">
+<section class="py-5 ser1">
         <div class="container-fluid">
                 <div class="row py-5">
-                        <div class="col-lg-6">
-                                <img alt="Digital Marketing" class="img-fluid"  src="images/digitalmarketing.png" title="Digital Marketing">
+                        <div class="col-lg-6"> 
+                                <img alt="Digital Marketing" class="img-fluid wow fadeInLeft"  src="images/digitalmarketing.png" title="Digital Marketing" data-wow-duration="1s">
                                 
                         </div>
                         <div class="col-lg-6">
-                                <h3>Digital Marketing</h3>
-                                <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                <h3 class="px-3 wow fadeInUp" data-wow-duration="1s">Digital Marketing</h3>
+                                <p class="para text-justify px-3 wow fadeInDown" data-wow-duration="1s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -143,7 +175,7 @@
                                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
-                               <button type="button" class="btn more float-left px-5" id="more">Read More</button>
+                               <button type="button" class="btn more float-left px-5 ml-3 wow fadeIn" id="more">Read More</button>
                                <style>
                                      .moreText {
                                         display: none;
@@ -163,8 +195,8 @@
                 <div class="row py-5">
                         
                         <div class="col-lg-6">
-                                <h3>Meme Marketing</h3>
-                                <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                <h3 class="px-3 wow fadeInUp" data-wow-duration="1s">Meme Marketing</h3>
+                                <p class="para text-justify px-3 wow fadeInDown" data-wow-duration="1s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -190,7 +222,7 @@
                                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
-                               <button type="button" class="btn more float-left px-5" id="more1">Read More</button>
+                               <button type="button" class="btn more float-left px-5 ml-3 wow fadeIn" id="more1">Read More</button>
                                <style>
                                      .moreText1 {
                                         display: none;
@@ -208,20 +240,20 @@
 
                         <div class="col-lg-6">
                                 <img alt="Steer Your Vision"
-                                    class="img-fluid"
-                                    src="images/meme.png" title="Steer Your Vision">
+                                    class="img-fluid wow fadeInRight"
+                                    src="images/meme.png" title="Steer Your Vision" data-wow-duration="1s">
                         </div>
                 </div>
 
-                <div class="row">
+                <div class="row py-5">
                         <div class="col-lg-6">
                                 <img
-                                    alt="PR Marketing" class="img-fluid" 
-                                    src="images/pr.png" title="PR Marketing">
+                                    alt="PR Marketing" class="img-fluid wow fadeInLeft" 
+                                    src="images/pr.png" title="PR Marketing" data-wow-duration="1s">
                         </div>
                         <div class="col-lg-6">
-                                <h3>PR Agency</h3>
-                                <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                <h3 class="px-3 wow fadeInUp" data-wow-duration="1s">PR Agency</h3>
+                                <p class="para text-justify px-3 wow fadeInDown" data-wow-duration="1s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -247,7 +279,7 @@
                                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
-                               <button type="button" class="btn more float-left px-5" id="more2">Read More</button>
+                               <button type="button" class="btn more float-left px-5 ml-3 wow fadeIn" id="more2">Read More</button>
                                <style>
                                      .moreText2 {
                                         display: none;
@@ -268,8 +300,8 @@
                 <div class="row py-5">
                         
                         <div class="col-lg-6">
-                                <h3>Influencer Marketing</h3>
-                                <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                <h3 class="px-3 wow fadeInUp" data-wow-duration="1s" >Influencer Marketing</h3>
+                                <p class="para text-justify px-3 wow fadeInDown" data-wow-duration="1s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -295,7 +327,7 @@
                                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
-                               <button type="button" class="btn more float-left px-5" id="more3">Read More</button>
+                               <button type="button" class="btn more float-left px-5 ml-3 wow fadeIn" id="more3">Read More</button>
                                <style>
                                      .moreText3 {
                                         display: none;
@@ -312,20 +344,20 @@
                         </div>
                         <div class="col-lg-6">
                                 <img
-                                    alt="Influencer Marketing" class="img-fluid" 
-                                    src="images/influencer.png" title="Influencer Marketing">
+                                    alt="Influencer Marketing" class="img-fluid wow fadeInRight" 
+                                    src="images/influencer.png" title="Influencer Marketing" data-wow-duration="1s">
                         </div>
                 </div>
 
-                <div class="row">
+                <div class="row py-5">
                         <div class="col-lg-6">
                                 <img
-                                    alt="Website Development" class="img-fluid" 
-                                    src="images/IT.png" title="Website Development">
+                                    alt="Website Development" class="img-fluid wow fadeInLeft" 
+                                    src="images/IT.png" title="Website Development" data-wow-duration="1s">
                         </div>
                         <div class="col-lg-6">
-                                <h3>IT Solution</h3>
-                                <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                <h3 class="px-3 wow fadeInUp" data-wow-duration="1s">IT Solution</h3>
+                                <p class="para text-justify px-3 wow fadeInDown" data-wow-duration="1s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -351,7 +383,7 @@
                                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
-                               <button type="button" class="btn more float-left px-5" id="more4">Read More</button>
+                               <button type="button" class="btn more float-left px-5 ml-3 wow fadeIn" id="more4">Read More</button>
                                <style>
                                      .moreText4 {
                                         display: none;
@@ -368,11 +400,11 @@
                         </div>
                 </div>
 
-                <div class="row">
+                <div class="row py-5">
                         
                         <div class="col-lg-6">
-                                <h3>Youtube Marketing</h3>
-                                <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                <h3 class="px-3 wow fadeInUp" data-wow-duration="1s">Youtube Marketing</h3>
+                                <p class="para text-justify px-3 wow fadeInDown" data-wow-duration="1s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -398,7 +430,7 @@
                                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
-                               <button type="button" class="btn more float-left px-5" id="more5">Read More</button>
+                               <button type="button" class="btn more float-left px-5 ml-3 wow fadeIn" id="more5">Read More</button>
                                <style>
                                      .moreText5 {
                                         display: none;
@@ -415,20 +447,20 @@
                         </div>
                         <div class="col-lg-6">
                                 <img alt="Youtube marketing"
-                                    class="img-fluid" src="images/youtubemarketing.png"
-                                    title="Youtube marketing">
+                                    class="img-fluid wow fadeInRight" src="images/youtubemarketing.png"
+                                    title="Youtube marketing" data-wow-duration="1s">
                         </div>
                 </div>
 
-                <div class="row">
+                <div class="row py-5">
                         <div class="col-lg-6">
                                 <img alt="affiliate marketing"
-                                    class="img-fluid" src="images/affiliatee.png"
-                                    title="affiliate marketing">
+                                    class="img-fluid wow fadeInLeft" src="images/affiliatee.png"
+                                    title="affiliate marketing" data-wow-duration="1s">
                         </div>
                         <div class="col-lg-6">
-                                <h3>Affiliate Marketing</h3>
-                                <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                <h3 class="px-3 wow fadeInUp" data-wow-duration="1s">Affiliate Marketing</h3>
+                                <p class="para text-justify px-3 wow fadeInDown" data-wow-duration="1s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -454,7 +486,7 @@
                                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
-                               <button type="button" class="btn more float-left px-5" id="more6">Read More</button>
+                               <button type="button" class="btn more float-left px-5 ml-3 wow fadeIn" id="more6">Read More</button>
                                <style>
                                      .moreText6 {
                                         display: none;
@@ -476,7 +508,370 @@
 
 
 
+<section class="py-5 ser2">
+        <div class="container-fluid">
+                <div class="row py-5">
+                        <div class="col-lg-6">
+                                <img alt="Digital Marketing" class="img-fluid wow fadeInLeft"  src="images/digitalmarketing.png" title="Digital Marketing" data-wow-duration="1s">
+                                
+                        </div>
+                        <div class="col-lg-6">
+                                <h3 class="px-3 wow fadeInUp" data-wow-duration="1s">Digital Marketing</h3>
+                                <p class="para text-justify px-3 wow fadeInDown" data-wow-duration="1s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <span class="moreText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+                               <button type="button" class="btn more float-left px-5 ml-3 wow fadeIn" id="more">Read More</button>
+                               <style>
+                                     .moreText {
+                                        display: none;
+                                     }  
+                               </style>
+                               <script>
+                                    $(document).ready(function(){
+                                       $("#more").click(function(){
+                                          $(".moreText").toggle();
+                                        });
+                                    }); 
+                               </script>
 
+                        </div>
+                </div>
+
+                <div class="row py-5">
+                        <div class="col-lg-6">
+                                <img alt="Steer Your Vision"
+                                    class="img-fluid wow fadeInLeft"
+                                    src="images/meme.png" title="Steer Your Vision" data-wow-duration="1s">
+                        </div>
+                        <div class="col-lg-6">
+                                <h3 class="px-4">Meme Marketing</h3>
+                                <p class="para px-4 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span  class="moreText1"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+                               <button type="button" class="btn more float-left px-5 ml-4" id="more1">Read More</button>
+                               <style>
+                                     .moreText1 {
+                                        display: none;
+                                     }  
+                               </style>
+                               <script>
+                                    $(document).ready(function(){
+                                       $("#more1").click(function(){
+                                          $(".moreText1").toggle();
+                                        });
+                                    }); 
+                               </script>
+
+                        </div>
+
+                        
+                </div>
+
+                <div class="row">
+                        <div class="col-lg-6">
+                                <img
+                                    alt="PR Marketing" class="img-fluid wow fadeInLeft" 
+                                    src="images/pr.png" title="PR Marketing" data-wow-duration="1s">
+                        </div>
+                        <div class="col-lg-6">
+                                <h3 class="px-3 wow fadeInUp" data-wow-duration="1s">PR Agency</h3>
+                                <p class="para text-justify px-3 wow fadeInDown" data-wow-duration="1s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <span class="moreText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+                               <button type="button" class="btn more float-left px-5 ml-3 wow fadeIn" id="more">Read More</button>
+                               <style>
+                                     .moreText2 {
+                                        display: none;
+                                     }  
+                               </style>
+                               <script>
+                                    $(document).ready(function(){
+                                       $("#more2").click(function(){
+                                          $(".moreText2").toggle();
+                                        });
+                                    }); 
+                               </script>
+
+                        </div>
+                </div>
+
+
+                <div class="row py-5">
+                         <div class="col-lg-6">
+                                <img
+                                    alt="Influencer Marketing" class="img-fluid wow fadeInLeft" 
+                                    src="images/influencer.png" title="Influencer Marketing" data-wow-duration="1s">
+                        </div>
+                        <div class="col-lg-6">
+                                <h3 class="px-3 wow fadeInUp" data-wow-duration="1s">Influencer Marketing</h3>
+                                <p class="para text-justify px-3 wow fadeInDown" data-wow-duration="1s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <span class="moreText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+                               <button type="button" class="btn more float-left px-5 ml-3 wow fadeIn" id="more">Read More</button>
+                               <style>
+                                     .moreText3 {
+                                        display: none;
+                                     }  
+                               </style>
+                               <script>
+                                    $(document).ready(function(){
+                                       $("#more3").click(function(){
+                                          $(".moreText3").toggle();
+                                        });
+                                    }); 
+                               </script>
+
+                        </div>
+                       
+                </div>
+
+                <div class="row">
+                        <div class="col-lg-6">
+                                <img
+                                    alt="Website Development" class="img-fluid wow fadeInLeft" 
+                                    src="images/IT.png" title="Website Development" data-wow-duration="1s">
+                        </div>
+                        <div class="col-lg-6">
+                                <h3 class="px-3 wow fadeInUp" data-wow-duration="1s">IT Solution</h3>
+                                <p class="para text-justify px-3 wow fadeInDown" data-wow-duration="1s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <span class="moreText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+                               <button type="button" class="btn more float-left px-5 ml-3 wow fadeIn" id="more">Read More</button>
+                               <style>
+                                     .moreText4 {
+                                        display: none;
+                                     }  
+                               </style>
+                               <script>
+                                    $(document).ready(function(){
+                                       $("#more4").click(function(){
+                                          $(".moreText4").toggle();
+                                        });
+                                    }); 
+                               </script>
+
+                        </div>
+                </div>
+
+                <div class="row">
+                        <div class="col-lg-6">
+                                <img alt="Youtube marketing"
+                                    class="img-fluid wow fadeInLeft" src="images/youtubemarketing.png"
+                                    title="Youtube marketing" data-wow-duration="1s">
+                        </div>
+                        <div class="col-lg-6">
+                                <h3 class="px-3 wow fadeInUp" data-wow-duration="1s">Youtube Marketing</h3>
+                                <p class="para text-justify px-3 wow fadeInDown" data-wow-duration="1s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <span class="moreText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+                               <button type="button" class="btn more float-left px-5 ml-3 wow fadeIn" id="more">Read More</button>
+                               <style>
+                                     .moreText5 {
+                                        display: none;
+                                     }  
+                               </style>
+                               <script>
+                                    $(document).ready(function(){
+                                       $("#more5").click(function(){
+                                          $(".moreText5").toggle();
+                                        });
+                                    }); 
+                               </script>
+
+                        </div>
+                        
+                </div>
+
+                <div class="row">
+                        <div class="col-lg-6">
+                                <img alt="affiliate marketing"
+                                    class="img-fluid wow fadeInLeft" src="images/affiliatee.png"
+                                    title="affiliate marketing" data-wow-duration="1s">
+                        </div>
+                        <div class="col-lg-6">
+                                <h3 class="px-3 wow fadeInUp" data-wow-duration="1s">Affiliate Marketing</h3>
+                                <p class="para text-justify px-3 wow fadeInDown" data-wow-duration="1s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <span class="moreText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+                               <button type="button" class="btn more float-left px-5 ml-3 wow fadeIn" id="more">Read More</button>
+                               <style>
+                                     .moreText6 {
+                                        display: none;
+                                     }  
+                               </style>
+                               <script>
+                                    $(document).ready(function(){
+                                       $("#more6").click(function(){
+                                          $(".moreText6").toggle();
+                                        });
+                                    }); 
+                               </script>
+
+                        </div>
+                </div>
+        </div>
+</section>
 
 
 

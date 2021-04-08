@@ -34,7 +34,11 @@
 
 
           <style>
-        
+          
+          * {
+              box-shadow: 0 0 0 transparent;
+
+          }
 
            /* @media screen and (max-width: 1024px) {
               footer {
@@ -73,6 +77,11 @@
               .form-group textarea {
                 font-size: 2em;
               }
+
+              .form-group select {
+                font-size: 2em;
+              }
+
             }
 
             .form-group input:hover, .form-group input:focus {
@@ -94,6 +103,27 @@
 
             }
             
+
+            .form-group select {
+              background-color: transparent;
+              border: none;
+              border-bottom: 1px solid white;
+              color: white;
+              border-radius: 0;
+
+            }
+
+            .form-group select:hover, .form-group select:active {
+              background-color: transparent;
+              color: white;
+              border: none;
+              border-bottom: 1px solid #F0B734;
+              border-radius: 0;
+              box-shadow: 0 0 0 transparent;
+            }
+
+
+
             .connect button {
               position: relative;
               z-index: 1;
@@ -293,11 +323,11 @@
   <div id="mySidenavR1" class="sidenavR1">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNavR1()">×</a>
     <a href="index.html">Home</a>
-    <a href="#choose">Why Choose Us?</a>
-    <a href="#services">Services</a>
+    <a href="index.html#choose">Why Choose Us?</a>
+    <a href="index.html#services">Services</a>
     <!-- <a href="#Ideologies">Ideologies</a> -->
-    <a href="#client">Our Clients</a>
-    <a href="#ofc">Offices</a>
+    <a href="index.html#client">Our Clients</a>
+    <a href="index.html#ofc">Offices</a>
     <a href="contact.html">Contact</a>
 </div>
           <div class="container-fluid pt-3">
@@ -325,7 +355,7 @@
                   <div class="row text-center pt-3 pb-3">
                     <div class="col-md-12">
                       <h2 class="head">Ready To Think Big...</h2>
-                      <p class="subhead">To discuss your projects with us in confidence, please use the form below to get in touch. Please also attach any relevant files associated to your project.</p>
+                      <p class="subhead">To discuss your projects with us in confidence, please use the form below to get in touch.</p>
                     </div>
                   </div>
 
@@ -373,7 +403,7 @@
                           <div class="row py-4" style="display:none" id="company_name">
                           <div class="col-md-12">
                             <div class="form-group">
-                                <input type="Text" name="Company Name" id="field"  placeholder="Name of company" class="form-control" >
+                                <input type="Text" name="Company Name" id="field" placeholder="Name of company" class="form-control" >
                               </div>
                           </div>
 
@@ -395,7 +425,7 @@
                         <div class="row py-4">
                           <div class="col-md-12">
                             <div class="form-group">
-                                <textarea name="Remark" id="message" required="" placeholder="Remark" class="form-control" class="py-3" rows="6"></textarea>
+                                <textarea name="Comment" id="message" required="" placeholder="Comment" class="form-control" class="py-3" rows="6"></textarea>
                             </div>
                           </div>
                         </div>
