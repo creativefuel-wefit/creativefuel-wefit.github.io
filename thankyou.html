@@ -39,119 +39,40 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/css/glide.core.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/css/glide.theme.css">
 
-          <style>
-           
-              .menu_1 {
-            
-            
-                /*position: fixed;*/
-                text-align: center;
-                color: #fff;
-                position: absolute;
-                top: 20px;
-                bottom: 0;
-              /*  left: 0;
-                right: 0;*/
-                margin: auto;
-                /*z-index: 3;*/
-            }
-                .thankyou {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                  z-index: 999;
-                  height: 100vh;
-                }
-                h3 {
-                    font-size: 40px;
-                    font-family: Work Sans;
-                    color: white;
-                }
-
-
-                .form-group label {
-                    color: white;
-                    font-family: Work Sans;
-                }
-                .form-group input,.form-group input:hover,.form-group input:focus {
-                  box-shadow: 0 0 0 transparent;
-                  background-color: black;
-                  border: none;
-                  outline: none;
-                  border-bottom: 2px solid white;
-                }
-
-                .form-group textarea,.form-group textarea:hover,.form-group textarea:focus {
-                  box-shadow: 0 0 0 transparent;
-                  background-color: black;
-                  border: none;
-                  outline: none;
-                  border-bottom: 2px solid white;
-                }
-                .btn {
-                    background-color: white;
-                    color: black;
-                }
-                @media screen and (max-width: 1024px) {
-  .icon_1 a i{
-  height: 80px;
-    line-height: 80px;
-  width: 80px;
-  font-size:40px; 
-}
-
-.atrate {
-  font-size: 2.5em;
-}
-
-.fnav a {
-  border-right: 1.5px solid white;
-  font-size: 2em;
-}
-}
-
-
-</style>
 </head>
 <body>
 		
 <div id="mySidenavR" class="sidenavR">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNavR()">×</a>
     <a href="index.html">Home</a>
+    <a href="index.html#choose">Why Choose Us?</a>
+    <a href="index.html#services">Services</a>
+    <!-- <a href="#Ideologies">Ideologies</a> -->
+    <a href="index.html#client">Our Clients</a>
+    <a href="index.html#ofc">Offices</a>
     <a href="contact.html">Contact</a>
 </div>
 
-	<script>
-		 function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-    }
-
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-    }
-
-    function openNavR() {
-        document.getElementById("mySidenavR").style.width = "250px";
-    }
-
-    function closeNavR() {
-        document.getElementById("mySidenavR").style.width = "0";
-    }
-	</script>
-	
-    <div class="container-fluid menu_1">
+  <div id="mySidenavR1" class="sidenavR1">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNavR1()">×</a>
+    <a href="index.html">Home</a>
+    <a href="index.html#choose">Why Choose Us?</a>
+    <a href="index.html#services">Services</a>
+    <!-- <a href="#Ideologies">Ideologies</a> -->
+    <a href="index.html#client">Our Clients</a>
+    <a href="index.html#ofc">Offices</a>
+    <a href="contact.html">Contact</a>
+</div>
+          <div class="container-fluid py-3">
             <div class="row">
-                <div class="col-md-12 text-center">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <a href="index.html"><img width="80" height="80" src="http://creativefuel.io/assets/img/image20.png" alt="Creativefuel" /></a>
-
-                        </div>
-                        <div class="col-md-8 text-center">
-                        </div>
-                        <div class="col-md-2">
-                            <span style="font-size:30px;cursor:pointer;text-align: right;" onclick="openNavR()" class="underline_3">Menu</span>
-                        </div>
+                <div class="col-md-12">
+                    
+                    <div class="float-left">
+                        <a href="index.html"><img src="http://creativefuel.io/assets/img/image20.png" alt="Creativefuel" class="logo"></a>
+                    </div>
+                    <div class="float-right">
+                        <span style="font-size:30px;cursor:pointer;text-align: right;color: #F0B734" onclick="openNavR()" class="nav1">Menu</span>
+                        <span style="font-size:30px;cursor:pointer;text-align: right;color: #F0B734" onclick="openNavR1()" class="nav2">Menu</span>
                     </div>
                 </div>
             </div>
@@ -166,7 +87,7 @@
                         </div>
                         <div class="col-md-8">
                             <h3 class="pb-3"> We’re thrilled to hear from you</h3>
-                            <h2>Our Creative fuel team will get in touch with you in lickety-split. </h2>
+                            <p>Our Creative fuel team will get in touch with you in lickety-split. </p>
                                
                         </div>
                         <div class="col-md-2">
@@ -179,25 +100,23 @@
        
 
        
-            <footer class="py-3">
-    <div class="row pt-5">
-        <div class="col-md-12 text-center icon_1 py-3">
-            <a href="https://www.instagram.com/creativefuel.pr/" class="mr-2"><i class="fa fa-instagram"></i></a>
-            <a href="https://www.facebook.com/Creativefuelio-108064270946273/" class="mr-2"><i class="fa fa-facebook"></i></a>
-            <a href="https://www.youtube.com/watch?v=hl6ebKO_EKs" class="mr-2"><i class="fa fa-youtube"></i></a>
-            <a href="https://www.linkedin.com/company/creative-fuel-io/mycompany/" class="mr-2"><i class="fa fa-linkedin"></i></a>
-            <a href="#" class="mr-2"><i class="fa fa-twitter"></i></a>
-        </div>
-        <div class="col-md-12 atrate">
-            <p class="text-center">@creativefuel</p>    
-        </div>
-        <div class="col-md-12 fnav text-center ">
-            <a href="index.html">Home</a>    
-            <a href="https://www.creativefuel.io/termsandconditions.html">Terms and conditions</i></a>
-            <a href="#">Privacy and Policy</i></a>
-        </div>
-    </div>
-  </footer>
+             <footer class="py-3">
+              <div class="text-center icon_1 py-4">
+                <a href="https://www.instagram.com/creativefuel.pr/"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.facebook.com/Creativefuelio-108064270946273/"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.youtube.com/watch?v=hl6ebKO_EKs"><i class="fa fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/company/creative-fuel-io/mycompany/"><i class="fa fa-linkedin"></i></a>
+                <!-- <a href="#"><i class="fa fa-twitter"></i></a> -->
+              </div>
+              <div class="py-1 company">
+                <p class="text-center">@Creativefuel</p>    
+              </div>
+              <div class="text-center px-2 py-3 link">
+                <a href="index.html">Home</a>    
+                <a href="terms and conditions.html">Terms and conditions</a>
+                <a href="privacy.html" class="border-0">Privacy and Policy</a>
+              </div>
+            </footer>
 
 
   

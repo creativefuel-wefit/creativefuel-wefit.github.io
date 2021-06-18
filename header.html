@@ -43,7 +43,225 @@
 
           }
 
-           
+           /* @media screen and (max-width: 1024px) {
+              footer {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+              }
+            }*/
+            .form-group input::placeholder {
+              color: white;
+            }
+
+            .form-group textarea::placeholder {
+              color: white;
+            }
+            .form-group input {
+              color: white;
+              background-color: transparent;
+              border: none;
+              border-bottom: 1px solid white;
+              border-radius: 0;
+            }
+
+            .form-group textarea {
+              background-color: transparent;
+              border: none;
+              border-bottom: 1px solid white;
+              color: white;
+              border-radius: 0;
+            }
+
+            @media screen and (max-width: 1000px) {
+              .form-group input {
+                font-size: 2em;
+              }
+              .form-group textarea {
+                font-size: 2em;
+              }
+
+              .form-group select {
+                font-size: 2em;
+              }
+
+            }
+
+            .form-group input:hover, .form-group input:focus {
+              background-color: transparent;
+              color: white;
+              border: none;
+              border-bottom: 1px solid #F0B734;
+              border-radius: 0;
+              box-shadow: 0 0 0 transparent;
+            }
+
+            .form-group textarea:hover, .form-group textarea:focus {
+              background-color: transparent;
+              color: white;
+              border: none;
+              border-bottom: 1px solid #F0B734;
+              border-radius: 0;
+              box-shadow: 0 0 0 transparent;
+
+            }
+            
+
+            .form-group select {
+              background-color: transparent;
+              border: none;
+              border-bottom: 1px solid white;
+              color: white;
+              border-radius: 0;
+
+            }
+
+            .form-group select:hover, .form-group select:active {
+              background-color: transparent;
+              color: white;
+              border: none;
+              border-bottom: 1px solid #F0B734;
+              border-radius: 0;
+              box-shadow: 0 0 0 transparent;
+            }
+
+
+
+            .connect button {
+              position: relative;
+              z-index: 1;
+              width: 50%;
+              font-size: 1.5em;
+              transition: all 1s ease;
+              border:1px solid white;
+              color: white;
+            }
+
+             @media screen and (max-width: 1000px) {
+              .connect button {
+
+                  font-size: 2em;
+              }
+            }
+            .connect button:after {
+              content: '';
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              transform: scaleX(0);
+              border-radius: 5px;
+              border-bottom: 1.5px solid #F0B734;
+              border-top:  1.5px solid #F0B734;
+              z-index: -1;
+              transition: all 1s ease;
+            }
+
+            .connect button:before {
+              content: '';
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              transform: scaleY(0);
+              border-radius: 5px;
+              border-left: 1.5px solid #F0B734;
+              border-right:  1.5px solid #F0B734;
+              z-index: -1;
+              transition: all 1s ease;
+            }
+
+            .connect button:hover {
+              transition: all 1s ease;
+              border: none;
+              color: #F0B734;
+            }
+            .connect button:hover:after {
+              transform: scaleX(1);
+              transition: all 1s ease;
+
+            }
+            .connect button:hover:before {
+              transition: all 1s ease;
+              transform: scaleY(1);
+
+            }
+
+            .connect button:active {
+              transition: all 1s ease;
+              border: none;
+              color: #F0B734;
+            }
+            .connect button:active:after {
+              transform: scaleX(1);
+              transition: all 1s ease;
+
+            }
+            .connect button:active:before {
+              transition: all 1s ease;
+              transform: scaleY(1);
+
+            }
+            .add {
+              border:2px solid white;
+            }
+
+            .head {
+              font-size: 3em;
+            }
+            .subhead {
+              font-size: 2em;
+            }
+
+            @media screen and (max-width: 567px) {
+              .head {
+              font-size: 2em;
+            }
+            .subhead {
+              font-size: 1em;
+            }
+            }
+
+            .add h3 {
+              font-size: 2em;
+            }
+
+            .add p {
+              font-size: 1em;
+            }
+
+             .add i {
+              font-size: 1em;
+            }
+             .add a {
+              font-size: 1em;
+              color: white;
+              text-decoration: none;
+            }
+
+            .add ul li  {
+              display: inline-block;
+            }
+
+
+            .policy {
+              font-size: 1em;
+            }
+            
+            @media screen and (max-width: 1024px) {
+              .add h3 {
+                font-size: 2.5em; 
+              }
+
+              .add p {
+                font-size: 1.5em;
+              }
+              .add a {
+                font-size: 2em;
+              }
+            }
           </style>
              
 </head>
@@ -85,7 +303,7 @@
             </div>
         </div>
   
-              <section class="pb-5 pt-2 connect">
+              <section class="py-5 connect">
                 <div class="container py-5">
                   <div class="row text-center pt-3 pb-3">
                     <div class="col-md-12">
@@ -95,7 +313,7 @@
                   </div>
 
                   <div class="row">
-                    <div class="col-xl-6  pb-5">
+                    <div class="col-xl-7 pr-5 pb-5">
                       <form action="https://formsubmit.co/connect@creativefuel.io" method="POST" accept-charset="utf-8">
                           <input type="hidden" name="_captcha" value="false">
                             <input type="hidden" name="_template" value="table">
@@ -145,42 +363,6 @@
                         </div>
 
                         <div class="row py-4">
-                          <div class="col-md-12">
-                            <div class="form-group">
-                                <div class="selectBox" onclick="showCheckboxes()">
-                                <select class="form-control ser">
-                                  <option>Select an option</option>
-                                </select>
-                                <div class="overSelect"></div>
-                                </div>
-                                <div id="checkboxes">
-                                  <input type="checkbox" name="DM" id="DM"><label for="DM">Digital Marketing</label>
-                                  <input type="checkbox" name="meme" id="meme"><label for="meme">Meme Marketing</label>
-                                  <input type="checkbox" name="PR" id="PR"><label for="PR">PR Agency</label>
-                                  <input type="checkbox" name="influencer" id="influencer"><label for="influencer">Influencer Marketing</label>
-                                  <input type="checkbox" name="IT" id="IT"><label for="IT">IT Solution</label>
-                                  <input type="checkbox" name="youtube" id="youtube"><label for="youtube">Youtube Marketing</label>
-                                  <input type="checkbox" name="afilliate" id="afilliate"><label for="afilliate">Aflliate Marketing</label>
-                                </div>
-                              </div>
-                          </div>
-                        </div>
-
-                        <script>
-                          var expanded = false;
-
-                          function showCheckboxes() {
-                            var checkboxes = document.getElementById("checkboxes");
-                            if (!expanded) {
-                              checkboxes.style.display = "block";
-                              expanded = true;
-                            } else {
-                              checkboxes.style.display = "none";
-                              expanded = false;
-                            }
-                          }
-                        </script>
-                        <div class="row py-4">
                           <div class="col-md-6">
                             <div class="form-group">
                                 <input type="number" name="contact" id="telephone" required placeholder="Contact Number" class="form-control">
@@ -196,7 +378,7 @@
                         <div class="row py-4">
                           <div class="col-md-12">
                             <div class="form-group">
-                                <textarea name="Comment" id="message" required="" placeholder="Enquiry" class="form-control" class="py-3" rows="3"></textarea>
+                                <textarea name="Comment" id="message" required="" placeholder="Comment" class="form-control" class="py-3" rows="6"></textarea>
                             </div>
                           </div>
                         </div>
@@ -217,10 +399,22 @@
 
                       </form>
                     </div>
-                    <div class="col-xl-6 py-4 message">
-                       <h3>Let's work together</h3>
-                       <p class="text-justify pt-4">We'd like to partner with agencies, media owners and web experts working with Flash content.</p>
-                       <p class="text-justify pt-4">Contact Us with the details of your project along with some information about your business and let's get the discussion going.</p>
+                    <div class="col-xl-5 text-center">
+                      <div class="add p-5">
+                        <h3>CreativeFuel Pvt. Ltd.</h3>
+                        <p>Gravity Mall, 105, Ware House Rd, Vijay Nagar, Indore, Madhya Pradesh 452010</p>
+
+                        <h3 class="pt-2">Email</h3>
+                        <a href="mailto:connect@creativefuel.io?subject=feedback"><i class="fa fa-envelope"></i> Connect@creativefuel.io</a>
+
+                        <h3 class="pt-3">Social</h3>
+                        <ul class="list-unstyled">
+                          <li><a href="https://www.instagram.com/creativefuel.pr/">Instagram</a></li>
+                          <li><a href="https://www.facebook.com/Creativefuelio-108064270946273/">Facebook</a></li>
+                          <li><a href="https://www.youtube.com/watch?v=hl6ebKO_EKs" title="">Youtube</a></li>
+                          <li><a href="#">Twitter</a></li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -248,22 +442,24 @@
             </section> -->
 
             <footer class="py-3">
-              <div class="text-center icon_1 py-4">
-                <a href="https://www.instagram.com/creativefuel.pr/"><i class="fa fa-instagram"></i></a>
-                <a href="https://www.facebook.com/Creativefuelio-108064270946273/"><i class="fa fa-facebook"></i></a>
-                <a href="https://www.youtube.com/watch?v=hl6ebKO_EKs"><i class="fa fa-youtube"></i></a>
-                <a href="https://www.linkedin.com/company/creative-fuel-io/mycompany/"><i class="fa fa-linkedin"></i></a>
-                <!-- <a href="#"><i class="fa fa-twitter"></i></a> -->
-              </div>
-              <div class="py-1 company">
-                <p class="text-center">@Creativefuel</p>    
-              </div>
-              <div class="text-center px-2 py-3 link">
-                <a href="index.html">Home</a>    
-                <a href="terms and conditions.html">Terms and conditions</a>
-                <a href="privacy.html" class="border-0">Privacy and Policy</a>
-              </div>
-            </footer>
+            <div class="row pt-5">
+                <div class="col-md-12 text-center icon_1 py-3">
+                    <a href="https://www.instagram.com/creativefuel.pr/" class="mr-2"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/Creativefuelio-108064270946273/" class="mr-2"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/watch?v=hl6ebKO_EKs" class="mr-2"><i class="fa fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/company/creative-fuel-io/mycompany/" class="mr-2"><i class="fa fa-linkedin"></i></a>
+                    <a href="#" class="mr-2"><i class="fa fa-twitter"></i></a>
+                </div>
+                <div class="col-md-12 atrate">
+                    <p class="text-center">@Creativefuel</p>    
+                </div>
+                <div class="col-md-12 fnav text-center ">
+                    <a href="index.html">Home</a>    
+                    <a href="terms and conditions.html">Terms and conditions</i></a>
+                    <a href="privacy.html" class="border-0">Privacy and Policy</i></a>
+                </div>
+            </div>
+          </footer>
 
 
   <!-- javascript -->

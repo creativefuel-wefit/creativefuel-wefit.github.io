@@ -57,7 +57,7 @@
     }
 	</script>
 
-	 <div class="bg-video-wrap_3 text-center" id="home">
+	 <div class="bg-video-wrap_3" id="home">
 	    <video src="images/video_1.mp4" loop muted autoplay class="v1">
 	    </video>
 
@@ -92,7 +92,7 @@
   	</div>
   </section>
   <!-- company -->
-  <section class="py-5">
+  <section class="py-5 text-center">
   	<div class="container-fluid">
   		<div class="row">
   			<div class="col-md-12">
@@ -100,23 +100,15 @@
   			</div>
   		</div>
   		<div class="row">
-  			<div class="col-md-6">
-  				image
-  			</div>
-  			<div class="col-md-6">
-  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-  				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-  				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  			<div class="col-md-12">
+  				<p>Creative Fuel Pvt. Ltd. is a leading digital marketing agency that specializes in meme marketing & influencer marketing. We are a team of proficient creative wizards who revel in strategizing and planning digital journeys for brands/businesses. With a combined network of 500M+ across social media platforms, and around 2K influencers onboard with us, Creative Fuel is amongst the first agencies in the country to tap on the trend of meme marketing. We are the perfect blend of technology and creativity that provides our clients with unique marketing strategies at an affordable price. Our clients benefit from a bespoke service that is tailored according to each customer’s needs. We let our work speak for itself, so check out our website to get a better understanding of our work.</p>
   			</div>
   		</div>
   	</div>
   </section>
   <!-- counter -->
 
-  <section class="py-5 text-center bg-light">
+  <section class="py-5 text-center">
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg d-flex justify-content-center flex-column align-items-center">
@@ -147,13 +139,6 @@
             <p>LinkedIn</p>
           </div>
         </div>
-        <div class="col-lg d-flex justify-content-center flex-column align-items-center">
-          <div class="social d-flex justify-content-center flex-column align-items-center my-3">
-            <h4 class="counter">250</h4>
-            <h6>MILLIONS +</h6>
-            <p>Our Total Media Reach</p>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -176,8 +161,8 @@
   <!-- video -->
   <section>
       <div class="bg-video-wrap_2">
-         <video class="v3">
-        <source src="images/video_2.mp4" type="video/mp4" />
+         <video class="v3"  playsinline>
+        <source  src="images/CREATIVEFUEL OFFICE TOUR.mp4" type="video/mp4"/>
     </video>
          <!--  <video src="images/video_2.mp4" loop muted autoplay class="v3">
           </video> -->
@@ -186,7 +171,8 @@
   </section>
   <script>
     $('.v3').parent().click(function () {
-  if($(this).children(".v3").get(0).paused){        $(this).children(".v3").get(0).play();   $(this).children(".playpause").fadeOut();
+  if($(this).children(".v3").get(0).paused){       
+   $(this).children(".v3").get(0).play();   $(this).children(".playpause").fadeOut();
     }else{       $(this).children(".v3").get(0).pause();
   $(this).children(".playpause").fadeIn();
     }
@@ -203,36 +189,27 @@
 
         </div>
         <div class="col-md-6">
-          <button type="button" class="btn btn-dark float-right">Join Our Team</button>
+          <a href="service.html"><button type="button" class="btn team float-right">Join Our Team</button></a>
           
         </div>
       </div>
       <div class="row py-5">
         <div class="col-md-4">
           <div class="about-service p-4">
-            <i class="fa fa-facebook"></i>
-            <h3>Service</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+            <h3>PR Services</h3>
+            <p>Public Relations is an important part of any marketing strategy in today’s time. With PR services like press releases and pre-written articles and blogs in reputed and well-known newspapers/magazines/websites, one can promote companies, individual work or get editorial coverage. </p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="about-service p-4">
-            <i class="fa fa-facebook"></i>
-            <h3>Service</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+            <h3>Affiliate Marketing</h3>
+            <p>Affiliate marketing is an online sales tactic that lets a product owner increase sales by allowing others targeting the same audience i.e. ‘affiliates’ to earn a commission by recommending their product to people. It involves referring a product/service by sharing it on a blog, social media platforms, or website.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="about-service p-4">
-            <i class="fa fa-facebook"></i>
-            <h3>Service</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+            <h3>Email Marketing</h3>
+            <p>Sometimes traditional approaches can work wonders for your brand. Email Marketing is one such tool where we take the professional approach to marketing and send emails to potential clients/customers to create awareness about your brand. It involves using email to send advertisements, request business, or solicit sales.</p>
           </div>
         </div>
       </div>
@@ -240,31 +217,45 @@
   </section>
 
   <!-- team -->
-  <section class="py-5 team bg-light">
+  <section class="py-5">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
           <h2>OUR TEAM</h2>
         </div>
       </div>
-      <div class="row">
+      <div class="row py-5">
         <div class="col-md-6">
-          <img src="" alt="">
-          image          
+          <img src="images/Team.png" alt="team" class="img-fluid">
         </div>
         <div class="col-md-6">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <button type="button" class="btn btn-dark">Join Our Team</button>
+          <p>Digital Marketing has experienced a significant growth in the past few years, and has emerged as one of the most important services to grow one’s brand/business or personal profile. Creative Fuel has the brightest minds in digital at your service to craft intuitive, engaging, impactful and enlightening digital journeys for you. Our team of proficient individuals brainstorm the quirkiest marketing strategies that align with your needs.</p>
+          <a href="contact.html"><button type="button" class="btn team">Join Our Team</button></a>
         </div>
       </div>
     </div>
   </section>
+  
 
+  <footer class="py-3">
+    <div class="row pt-5">
+        <div class="col-md-12 text-center icon_1 py-3">
+            <a href="https://www.instagram.com/creativefuel.pr/" class="mr-2"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/Creativefuelio-108064270946273/" class="mr-2"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.youtube.com/watch?v=hl6ebKO_EKs" class="mr-2"><i class="fa fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/company/creative-fuel-io/mycompany/" class="mr-2"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="mr-2"><i class="fa fa-twitter"></i></a>
+        </div>
+        <div class="col-md-12 atrate">
+            <p class="text-center">@Creativefuel</p>    
+        </div>
+        <div class="col-md-12 fnav text-center ">
+            <a href="index.html">Home</a>    
+            <a href="terms and conditions.html">Terms and conditions</i></a>
+            <a href="privacy.html">Privacy and Policy</i></a>
+        </div>
+    </div>
+  </footer>
   <script src="assets/wow.js"></script>
     <script src="assets/index.js"></script>
 </body>

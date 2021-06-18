@@ -31,7 +31,7 @@
 
 
     function openNavR1() {
-        document.getElementById("mySidenavR1").style.width = "100%";
+        document.getElementById("mySidenavR1").style.width = "50%";
     }
 
     function closeNavR1() {
